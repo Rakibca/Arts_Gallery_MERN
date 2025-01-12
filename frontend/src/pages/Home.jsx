@@ -18,7 +18,7 @@ import Photo07 from "../assets/photos/resized/photos07.jpg";
 const Home = () => {
   const [images, setImages] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [postsPerPage, setPostsPerPage] = useState(2);
 
   const fetchImages = async () => {
     try {

@@ -30,10 +30,14 @@ const ImageDetail = () => {
     <>
       <div className="d-flex flex-column align-items-center w-50 m-auto mt-4">
         <div className="image-card">
-          <img src={imageDetails?.imageURL} alt={imageDetails?.originalName} />
+          <img
+            src={imageDetails?.imageURL}
+            alt={imageDetails?.originalName}
+            style={{ borderWidth: "16px" }}
+          />
         </div>
         <br></br>
-        <h4 className="text-color">
+        <h4 style={{ color: "#ceb4a9" }}>
           {imageDetails?.originalName
             .split(".")
             .slice(0, -1)
@@ -43,7 +47,7 @@ const ImageDetail = () => {
             .join(" ")}
         </h4>
         <br></br>
-        <h4 className="text-color">
+        <h4 style={{ color: "#ceb4a9" }}>
           {"Price: $" +
             imageDetails?.originalName.split(" ").pop().slice(0, -5)}
         </h4>
@@ -61,9 +65,7 @@ const ImageDetail = () => {
         </Alert>
         <br></br>
         <Button variant="primary">
-          <a href="/" className="text-color">
-            Back
-          </a>
+          <a href="/">Back</a>
         </Button>
         <br></br>
         <br></br>

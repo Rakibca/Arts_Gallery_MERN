@@ -4,7 +4,6 @@ import { useDropzone } from "react-dropzone";
 import { ToastContainer } from "react-toastify";
 import { toast } from "react-toastify";
 import Button from "react-bootstrap/Button";
-import Badge from "react-bootstrap/Badge";
 
 const ImageAdmin = () => {
   const [imageList, setImageList] = useState([]);
@@ -75,18 +74,21 @@ const ImageAdmin = () => {
   return (
     <>
       <header>
-        <h1 className="animate__animated animate__fadeInDown">
-          <Badge bg="secondary">Admin</Badge>
+        <h1
+          style={{ color: "#ceb4a9", textAlign: "center", padding: "20px" }}
+          className="animate__animated animate__fadeInDown"
+        >
+          Admin
         </h1>
       </header>
 
-      <div className="d-flex flex-column align-items-center w-50 m-auto mt-5">
+      <div className="d-flex flex-column align-items-center w-50 m-auto mt-1">
         {/* Upload Image or Drag 'n' Drop */}
         <div {...getRootProps()} className="dropzone">
           <input {...getInputProps()} />
-          <p className="text-color">
+          <h3 className="animate__animated animate__fadeInDown">
             Drag 'n' drop files here, or click to select files
-          </p>
+          </h3>
         </div>
 
         {/* Spinner */}
@@ -122,9 +124,7 @@ const ImageAdmin = () => {
         <br></br>
         <br></br>
         <Button variant="primary">
-          <a href="/" className="text-color">
-            Back
-          </a>
+          <a href="/">Back</a>
         </Button>
         <br></br>
         <br></br>

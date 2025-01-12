@@ -53,16 +53,17 @@ const Home = () => {
               <Row className="justify-content-md-center">
                 <Col md={11}>
                   <h5 className="animate__animated animate__bounceInLeft">
-                    Hey! Welcome to my page! My name is Raonak Khan. I was born
-                    in Montreal on November 2001. I moved to Calgary with my
-                    parents in 2005. I have graduated from Nelson Mandela High
-                    School in 2020. I live in Taralea Green NE, Calgary, AB. My
-                    Dad is Rony and Mom is Nasima. I have a passion for Art and
-                    Painting. I love sketching, water coloring, and acrylic
-                    painting. Here you will see some of my art works, sketches,
-                    water color and acrylic paintings. Your appreciations and
-                    comments will encourage me to create more new work. I hope
-                    you will enjoy my art works.
+                    Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
+                    born in Montreal on November 2001. I moved to Calgary with
+                    my parents in 2005. I have graduated from Nelson Mandela
+                    High School in 2020.I have taken some courses from Mt. Royal
+                    University. I am attending program at Springboard Centre. I
+                    live in Taradale community in North East, Calgary, Alberta.
+                    My Dad is Rony and Mom is Nasima. I have a passion for Art
+                    and Painting. I love sketching, water coloring, and acrylic
+                    painting. I received some awards from my community Program and Art
+                    competition. I try to see people with my eyes and try to put
+                    them in my painting.
                   </h5>
                 </Col>
               </Row>

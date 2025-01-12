@@ -34,14 +34,12 @@ const ImageDetail = () => {
         </div>
         <br></br>
         <h4 className="text-color">
-          {"Name: " + imageDetails?.originalName.split(" ")}
-          {/* {"Name: " +
-          imageDetails?.originalName.split(" ").slice(0, -1).join(" ")} */}
+          {imageDetails?.originalName.split(" ").slice(0, -1).join(" ")}
         </h4>
         <br></br>
         <h4 className="text-color">
           {"Price: $" +
-            imageDetails?.originalName.split(" ").pop().slice(0, -4)}
+            imageDetails?.originalName.split(" ").pop().slice(0, -5)}
         </h4>
         <br></br>
         <PayPalIntegration />

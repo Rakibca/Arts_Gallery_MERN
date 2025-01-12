@@ -28,7 +28,7 @@ const ImageAdmin = () => {
   }, []);
 
   const onDrop = async (acceptedFiles) => {
-    console.log("Accepted Files:", acceptedFiles);
+    //console.log("Accepted Files:", acceptedFiles);
     setLoading(true);
     const formData = new FormData();
     acceptedFiles.forEach((file) => {

@@ -109,7 +109,11 @@ const ImageAdmin = () => {
                 <p>{image.originalName}</p>
               </Link>
               <br></br>
-              <Button onClick={() => handleDelete(image._id)} variant="danger">
+              <Button
+                onClick={() => handleDelete(image._id)}
+                variant="danger"
+                style={{ color: "#ceb4a9" }}
+              >
                 DELETE
               </Button>
             </div>
@@ -123,9 +127,11 @@ const ImageAdmin = () => {
         />
         <br></br>
         <br></br>
-        <Button variant="primary">
-          <a href="/">Back</a>
-        </Button>
+        {/* <Button variant="warning">
+          <a style={{ color: "#640f28" }} href="/">
+            BACK
+          </a>
+        </Button> */}
         <br></br>
         <br></br>
       </div>

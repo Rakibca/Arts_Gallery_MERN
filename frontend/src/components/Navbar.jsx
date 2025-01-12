@@ -7,7 +7,14 @@ const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="title animate__animated animate__fadeInDown">
-        Arts by Raonak
+        {/* Arts by Raonak */}
+        <h1
+          style={{
+            fontFamily: "Lucida Handwriting, cursive",
+          }}
+        >
+          Arts by Raonak
+        </h1>
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
@@ -20,7 +27,7 @@ const Navbar = () => {
             to="/events"
             className="animate__animated animate__fadeInDown"
           >
-            Upcoming Events
+            <h5>UPCOMING EVENTS</h5>
           </NavLink>
         </li>
         <li>
@@ -28,7 +35,7 @@ const Navbar = () => {
             to="/contact"
             className="animate__animated animate__fadeInDown"
           >
-            Contact
+            <h5>CONTACT</h5>
           </NavLink>
         </li>
       </ul>

@@ -64,9 +64,11 @@ const ImageDetail = () => {
           </p>
         </Alert>
         <br></br>
-        <Button variant="primary">
-          <a href="/">Back</a>
-        </Button>
+        {/* <Button variant="warning">
+          <a style={{ color: "#640f28" }} href="/" >
+            BACK
+          </a>
+        </Button> */}
         <br></br>
         <br></br>
       </div>

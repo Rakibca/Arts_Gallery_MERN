@@ -69,11 +69,11 @@ const Contact = () => {
         <button type="submit">Send Message</button>
       </form>
       <br></br>
-      <Button variant="primary">
-        <a href="/" className="text-color">
-          Back
-        </a>
-      </Button>
+      {/* <Button variant="warning">
+          <a style={{ color: "#640f28" }} href="/">
+            BACK
+          </a>
+        </Button> */}
       <br></br>
       <br></br>
     </Container>

@@ -34,7 +34,13 @@ const ImageDetail = () => {
         </div>
         <br></br>
         <h4 className="text-color">
-          {imageDetails?.originalName.split(" ").slice(0, -1).join(" ")}
+          {imageDetails?.originalName
+            .split(".")
+            .slice(0, -1)
+            .join(".")
+            .split(" ")
+            .slice(1, -1)
+            .join(" ")}
         </h4>
         <br></br>
         <h4 className="text-color">

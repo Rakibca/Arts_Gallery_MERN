@@ -17,9 +17,10 @@ const Events = () => {
         <Alert.Heading>Raonak's Solo Art Exhibition</Alert.Heading>
         <hr />
         <p className="mb-0">
+          Location: The Genesis Centre<br></br>
           Date: April 27, 2025 <br></br>
           Time: 10am to 4pm MT <br></br>
-          Location: Genesis Centre NE, Calgary AB
+          Address: 7555 Falconridge Blvd NE #10, Calgary, AB T3J 0C9
         </p>
       </Alert>
       <br></br>

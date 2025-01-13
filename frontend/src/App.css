@@ -41,6 +41,10 @@ body {
   border-radius: 20px;
 }
 
+.image-card img:hover {
+  zoom: 1.4;
+}
+
 .image-card p {
   margin: 0px;
   padding: 10px;

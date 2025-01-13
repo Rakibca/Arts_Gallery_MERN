@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Button from "./Button";
 import "animate.css";
 
 const Navbar = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
             to="/events"
             className="animate__animated animate__fadeInDown"
           >
-            <h5>UPCOMING EVENTS</h5>
+            <Button text="UPCOMING EVENTS" effectType="effect1" />
           </NavLink>
         </li>
         <li>
@@ -35,7 +36,7 @@ const Navbar = () => {
             to="/contact"
             className="animate__animated animate__fadeInDown"
           >
-            <h5>CONTACT</h5>
+            <Button text="CONTACT" effectType="effect1" />
           </NavLink>
         </li>
       </ul>

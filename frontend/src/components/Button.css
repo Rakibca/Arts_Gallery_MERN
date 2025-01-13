@@ -1,0 +1,45 @@
+.effect1 {
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.effect1:hover {
+  transform: scale(1.2);
+}
+
+/* Button.css */
+.effect2 {
+  transition: box-shadow 0.3s, border-radius 0.3s;
+}
+
+.effect2:hover {
+  box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
+  border-radius: 20px;
+}
+
+/* Button.css */
+.effect3 {
+  transition: transform 0.3s, background-position 0.5s ease;
+}
+
+.effect3:hover {
+  transform: translateX(10px);
+  background-position: right bottom;
+}
+
+/* Button.css */
+.effect4 {
+  transition: transform 0.3s;
+}
+
+.effect4:hover {
+  transform: rotate(45deg);
+}
+
+/* Button.css */
+.effect5 {
+  transition: transform 0.3s;
+}
+
+.effect5:hover {
+  transform: scaleX(-1);
+}

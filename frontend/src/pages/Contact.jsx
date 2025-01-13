@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "animate.css";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
+//import Button from "../components/Button";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 

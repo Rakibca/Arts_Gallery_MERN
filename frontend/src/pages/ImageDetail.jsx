@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "animate.css";
-import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 import PayPalIntegration from "../components/PayPalIntegration";
 

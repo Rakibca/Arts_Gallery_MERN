@@ -8,6 +8,7 @@ const Button = ({ text, effectType }) => {
         color: "#640f28",
         fontWeight: "bold",
         backgroundColor: "#cda174",
+        borderRadius: "10px",
       }}
       className={`custom-button ${effectType}`}
     >

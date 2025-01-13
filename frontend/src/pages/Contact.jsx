@@ -66,7 +66,10 @@ const Contact = () => {
           placeholder="Message"
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-        <button type="submit" style={{ backgroundColor: "#a87883" }}>
+        <button
+          type="submit"
+          style={{ backgroundColor: "#a87883", borderRadius: "20px" }}
+        >
           <h5 style={{ color: "#640f28", fontWeight: "bold" }}>SEND MESSAGE</h5>
         </button>
       </form>

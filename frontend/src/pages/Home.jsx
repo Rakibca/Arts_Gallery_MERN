@@ -48,11 +48,16 @@ const Home = () => {
       <Row className="justify-content-md-center">
         <Accordion defaultActiveKey="1">
           <Accordion.Item eventKey="1">
-            <Accordion.Header>PROFILE</Accordion.Header>
+            <Accordion.Header>
+              <h6 style={{ color: "#640f28" }}>PROFILE</h6>
+            </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
                 <Col md={11}>
-                  <h5 className="animate__animated animate__bounceInLeft">
+                  <h6
+                    style={{ color: "#640f28", textAlign: "center" }}
+                    className="animate__animated animate__bounceInLeft"
+                  >
                     Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
                     born in Montreal on November 2001. I moved to Calgary with
                     my parents in 2005. I have graduated from Nelson Mandela
@@ -61,17 +66,19 @@ const Home = () => {
                     live in Taradale community in North East, Calgary, Alberta.
                     My Dad is Rony and Mom is Nasima. I have a passion for Art
                     and Painting. I love sketching, water coloring, and acrylic
-                    painting. I received some awards from my community Program and Art
-                    competition. I try to see people with my eyes and try to put
-                    them in my painting.
-                  </h5>
+                    painting. I received some awards from my community Program
+                    and Art competition. I try to see people with my eyes and
+                    try to put them in my painting.
+                  </h6>
                 </Col>
               </Row>
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="2">
-            <Accordion.Header>PHOTOS</Accordion.Header>
+            <Accordion.Header>
+              <h6 style={{ color: "#640f28" }}>PHOTOS</h6>
+            </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
                 <Col md={2}>
@@ -170,6 +177,14 @@ const Home = () => {
         </div>
       </Row>
 
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
     </Container>

@@ -12,15 +12,13 @@ body {
   text-align: center;
 } */
 
-/* Drag n Drop ***********************************************************/
-.dropzone {
-  width: 100%;
-  padding: 20px;
-  border: 2px solid #cda174;
-  border-radius: 20px;
-  text-align: center;
-  cursor: pointer;
-  color: #ceb4a9;
+/* Accordion ***********************************************************/
+.accordion-button {
+  background-color: #ceb4a9 !important;
+}
+
+.accordion-body {
+  background-color: #cda174 !important;
 }
 
 /* Image ***********************************************************/
@@ -142,7 +140,18 @@ nav .menu span {
   font-weight: 900;
   border-color: yellow;
   background: #a87883;
-  color: #2c2c2c
+  color: #2c2c2c;
+}
+
+/* Drag n Drop ***********************************************************/
+.dropzone {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #cda174;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #ceb4a9;
 }
 
 /* Media ***********************************************************/

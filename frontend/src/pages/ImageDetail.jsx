@@ -63,12 +63,15 @@ const ImageDetail = () => {
             by e-transfer.
           </p>
         </Alert>
+
         <br></br>
-        {/* <Button variant="warning">
-          <a style={{ color: "#640f28" }} href="/" >
-            BACK
-          </a>
-        </Button> */}
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <br></br>
         <br></br>
       </div>

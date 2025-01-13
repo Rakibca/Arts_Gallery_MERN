@@ -13,6 +13,7 @@ const Events = () => {
       <Alert
         variant="success"
         className="animate__animated animate__fadeInDown"
+        style={{ color: "#640f28", backgroundColor: "#cda174" }}
       >
         <Alert.Heading>Raonak's Solo Art Exhibition</Alert.Heading>
         <hr />
@@ -23,12 +24,15 @@ const Events = () => {
           Address: 7555 Falconridge Blvd NE #10, Calgary, AB T3J 0C9
         </p>
       </Alert>
+
       <br></br>
-      {/* <Button variant="warning">
-          <a style={{ color: "#640f28" }} href="/">
-            BACK
-          </a>
-        </Button> */}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
     </Container>

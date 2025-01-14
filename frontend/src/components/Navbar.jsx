@@ -8,7 +8,6 @@ const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="title animate__animated animate__fadeInDown">
-        {/* Arts by Raonak */}
         <h1
           style={{
             fontFamily: "Lucida Handwriting, cursive",

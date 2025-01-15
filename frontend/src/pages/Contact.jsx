@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "animate.css";
-import Container from "react-bootstrap/Container";
-//import Button from "../components/Button";
+import Flex from "@react-css/flex";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
@@ -9,14 +8,10 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Your EmailJS service ID, template ID, and Public Key
-    const serviceId = "service_0cvik8d";
-    const templateId = "template_o50k80f";
-    const publicKey = "WiqEuvawv0tZ6tuIG";
 
     // Create a new object that contains dynamic template params
     const templateParams = {
@@ -26,58 +21,91 @@ const Contact = () => {
       message: message,
     };
 
-    // Send the email using EmailJS
+    // Send email using EmailJS
     emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully!", response);
-        setName("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      });
+      .send(
+        "service_0cvik8d", // EmailJS service ID
+        "template_o50k80f", // EmailJS template ID
+        templateParams,
+        "WiqEuvawv0tZ6tuIG" // EmailJS Public Key
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Email sent successfully!",
+            response.status,
+            response.text
+          );
+          setSent(true);
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (err) => {
+          console.log("Error sending email:", err);
+        }
+      );
   };
 
   return (
-    <Container fluid className="d-flex flex-column align-items-center">
-      <form
-        onSubmit={handleSubmit}
-        className="emailForm animate__animated animate__fadeInDown"
-      >
-        <input
-          type="text"
-          placeholder="Your Full Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Your Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        {email}
-        <textarea
-          cols="100"
-          rows="10"
-          value={message}
-          placeholder="Message"
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
-        <button
-          type="submit"
-          style={{ backgroundColor: "#a87883", borderRadius: "20px" }}
+    <div>
+      <br></br>
+      <Flex column alignItemsCenter>
+        <h3>GET IN TOUCH</h3>
+        <form
+          onSubmit={handleSubmit}
+          className="emailForm animate__animated animate__fadeInDown"
         >
-          <h5 style={{ color: "#640f28", fontWeight: "bold" }}>SEND MESSAGE</h5>
-        </button>
-      </form>
+          <Flex.Item>
+            <label>Your Full Name:</label>
+            <br></br>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </Flex.Item>
 
+          <Flex.Item>
+            <label>Your Email Address:</label>
+            <br></br>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </Flex.Item>
+
+          <Flex.Item>
+            <label>Message:</label>
+            <br></br>
+            <textarea
+              cols="70"
+              rows="5"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+          </Flex.Item>
+
+          <Flex.Item>
+            <button
+              type="submit"
+              style={{ backgroundColor: "#a87883", borderRadius: "8px" }}
+            >
+              <h5 style={{ color: "#640f28", fontWeight: "bold" }}>SUBMIT</h5>
+            </button>
+          </Flex.Item>
+          <br></br>
+          <Flex.Item>{sent && <p>Message sent!</p>}</Flex.Item>
+        </form>
+      </Flex>
       <br></br>
       <br></br>
       <br></br>
-    </Container>
+    </div>
   );
 };
 

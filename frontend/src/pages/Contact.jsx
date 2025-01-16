@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <>
       <br></br>
       <Flex column alignItemsCenter>
         <h3 style={{ color: "#cda174", fontWeight: "bold" }}>Get In Touch</h3>
@@ -107,7 +107,7 @@ const Contact = () => {
       <br></br>
       <br></br>
       <br></br>
-    </div>
+    </>
   );
 };
 

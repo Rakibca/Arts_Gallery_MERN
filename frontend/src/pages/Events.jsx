@@ -11,7 +11,7 @@ const Events = () => {
         style={{
           color: "#640f28",
           backgroundColor: "#cda174",
-          marginTop: "20px",
+          marginTop: "40px",
         }}
       >
         <Alert.Heading>Raonak's Solo Art Exhibition</Alert.Heading>

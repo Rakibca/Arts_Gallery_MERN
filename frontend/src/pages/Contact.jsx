@@ -2,7 +2,6 @@ import { useState } from "react";
 import "animate.css";
 import Flex from "@react-css/flex";
 import emailjs from "@emailjs/browser";
-import "./Contact.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -82,7 +81,7 @@ const Contact = () => {
             <label>Message:</label>
             <br></br>
             <textarea
-              cols="70"
+              cols="55"
               rows="5"
               value={message}
               onChange={(e) => setMessage(e.target.value)}

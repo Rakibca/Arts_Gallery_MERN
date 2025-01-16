@@ -1,6 +1,6 @@
 body {
   /* margin: 0px 400px; */
-  padding: 0px 150px;
+  /* padding: 0px 150px; */
   background: linear-gradient(#640f28, #2c2c2c);
   background-attachment: fixed;
 }
@@ -159,8 +159,20 @@ nav .menu span {
   color: #ceb4a9;
 }
 
+/* Contact ***********************************************************/
+input {
+  width: 100%;
+  margin: 5px 0px;
+  background-color: #cda174;
+}
+
+textarea {
+  margin: 5px 0px;
+  background-color: #cda174;
+}
+
 /* Media ***********************************************************/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 430px) {
   nav .menu {
     display: flex;
   }

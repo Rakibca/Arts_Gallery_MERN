@@ -1,7 +1,6 @@
 import "animate.css";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
-import "./Events.css";
 
 const Events = () => {
   return (

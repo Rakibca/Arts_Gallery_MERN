@@ -50,13 +50,14 @@ const Contact = () => {
     <div>
       <br></br>
       <Flex column alignItemsCenter>
-        <h3>GET IN TOUCH</h3>
+        <h3 style={{ color: "#cda174", fontWeight: "bold" }}>Get In Touch</h3>
+        <br></br>
         <form
           onSubmit={handleSubmit}
           className="emailForm animate__animated animate__fadeInDown"
         >
           <Flex.Item>
-            <label>Your Full Name:</label>
+            <label style={{ color: "#ceb4a9" }}>Your Full Name:</label>
             <br></br>
             <input
               type="text"
@@ -67,7 +68,7 @@ const Contact = () => {
           </Flex.Item>
 
           <Flex.Item>
-            <label>Your Email Address:</label>
+            <label style={{ color: "#ceb4a9" }}>Your Email Address:</label>
             <br></br>
             <input
               type="email"
@@ -78,7 +79,7 @@ const Contact = () => {
           </Flex.Item>
 
           <Flex.Item>
-            <label>Message:</label>
+            <label style={{ color: "#ceb4a9" }}>Message:</label>
             <br></br>
             <textarea
               cols="55"
@@ -88,6 +89,7 @@ const Contact = () => {
               required
             />
           </Flex.Item>
+          <br></br>
 
           <Flex.Item>
             <button

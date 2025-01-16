@@ -103,6 +103,7 @@ const Contact = () => {
           <Flex.Item>{sent && <p>Message sent!</p>}</Flex.Item>
         </form>
       </Flex>
+
       <br></br>
       <br></br>
       <br></br>

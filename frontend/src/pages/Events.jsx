@@ -1,17 +1,18 @@
 import "animate.css";
-import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
+import Flex from "@react-css/flex";
 
 const Events = () => {
   return (
-    <Container
-      fluid
-      className="d-flex flex-column align-items-center w-50 m-auto mt-5"
-    >
+    <Flex column alignItemsCenter>
       <Alert
         variant="success"
         className="animate__animated animate__fadeInDown"
-        style={{ color: "#640f28", backgroundColor: "#cda174" }}
+        style={{
+          color: "#640f28",
+          backgroundColor: "#cda174",
+          marginTop: "20px",
+        }}
       >
         <Alert.Heading>Raonak's Solo Art Exhibition</Alert.Heading>
         <hr />
@@ -26,7 +27,7 @@ const Events = () => {
       <br></br>
       <br></br>
       <br></br>
-    </Container>
+    </Flex>
   );
 };
 

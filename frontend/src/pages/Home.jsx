@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "animate.css";
 import ImageList from "../components/ImageList";
 import Pagination from "../components/Pagination";
-import Container from "react-bootstrap/Container";
 import Accordion from "react-bootstrap/Accordion";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -44,128 +43,125 @@ const Home = () => {
 
   return (
     <>
-      <Container fluid>
-        <br></br>
+      <br></br>
+      <Flex column alignItemsCenter>
+        <Accordion defaultActiveKey="1">
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>
+              <h6 style={{ color: "#640f28" }}>PROFILE</h6>
+            </Accordion.Header>
+            <Accordion.Body>
+              <Row className="justify-content-md-center">
+                <Col md={11}>
+                  <h6
+                    style={{ color: "#640f28", textAlign: "center" }}
+                    className="animate__animated animate__bounceInLeft"
+                  >
+                    Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
+                    born in Montreal on November 2001. I moved to Calgary with
+                    my parents in 2005. I have graduated from Nelson Mandela
+                    High School in 2020.I have taken some courses from Mt. Royal
+                    University. I am attending program at Springboard Centre. I
+                    live in Taradale community in North East, Calgary, Alberta.
+                    My Dad is Rony and Mom is Nasima. I have a passion for Art
+                    and Painting. I love sketching, water coloring, and acrylic
+                    painting. I received some awards from my community Program
+                    and Art competition. I try to see people with my eyes and
+                    try to put them in my painting.
+                  </h6>
+                </Col>
+              </Row>
+            </Accordion.Body>
+          </Accordion.Item>
 
-        <Row className="justify-content-md-center">
-          <Accordion defaultActiveKey="1">
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>
-                <h6 style={{ color: "#640f28" }}>PROFILE</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <Row className="justify-content-md-center">
-                  <Col md={11}>
-                    <h6
-                      style={{ color: "#640f28", textAlign: "center" }}
-                      className="animate__animated animate__bounceInLeft"
-                    >
-                      Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
-                      born in Montreal on November 2001. I moved to Calgary with
-                      my parents in 2005. I have graduated from Nelson Mandela
-                      High School in 2020.I have taken some courses from Mt.
-                      Royal University. I am attending program at Springboard
-                      Centre. I live in Taradale community in North East,
-                      Calgary, Alberta. My Dad is Rony and Mom is Nasima. I have
-                      a passion for Art and Painting. I love sketching, water
-                      coloring, and acrylic painting. I received some awards
-                      from my community Program and Art competition. I try to
-                      see people with my eyes and try to put them in my
-                      painting.
-                    </h6>
-                  </Col>
-                </Row>
-              </Accordion.Body>
-            </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>
+              <h6 style={{ color: "#640f28" }}>PHOTOS</h6>
+            </Accordion.Header>
+            <Accordion.Body>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo01}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    roundedCircle
+                  />
+                </Col>
+              </Row>
+              <br></br>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo02}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo03}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo04}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+              </Row>
+              <br></br>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo05}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo06}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo07}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+              </Row>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </Flex>
 
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>
-                <h6 style={{ color: "#640f28" }}>PHOTOS</h6>
-              </Accordion.Header>
-              <Accordion.Body>
-                <Row className="justify-content-md-center">
-                  <Col md={2}>
-                    <Image
-                      className="animate__animated animate__zoomIn"
-                      src={Photo01}
-                      alt="photos"
-                      width="auto"
-                      height="auto"
-                      roundedCircle
-                    />
-                  </Col>
-                </Row>
-                <br></br>
-                <Row className="justify-content-md-center">
-                  <Col md={2}>
-                    <Image
-                      className="animate__animated animate__zoomIn"
-                      src={Photo02}
-                      alt="photos"
-                      width="auto"
-                      height="auto"
-                      thumbnail
-                    />
-                  </Col>
-                  <Col md={2}>
-                    <Image
-                      className="animate__animated animate__zoomIn"
-                      src={Photo03}
-                      alt="photos"
-                      width="auto"
-                      height="auto"
-                      thumbnail
-                    />
-                  </Col>
-                  <Col md={2}>
-                    <Image
-                      className="animate__animated animate__zoomIn"
-                      src={Photo04}
-                      alt="photos"
-                      width="auto"
-                      height="auto"
-                      thumbnail
-                    />
-                  </Col>
-                </Row>
-                <br></br>
-                <Row className="justify-content-md-center">
-                  <Col md={2}>
-                    <Image
-                      className="animate__animated animate__zoomIn"
-                      src={Photo05}
-                      alt="photos"
-                      width="auto"
-                      height="auto"
-                      thumbnail
-                    />
-                  </Col>
-                  <Col md={2}>
-                    <Image
-                      className="animate__animated animate__zoomIn"
-                      src={Photo06}
-                      alt="photos"
-                      width="auto"
-                      height="auto"
-                      thumbnail
-                    />
-                  </Col>
-                  <Col md={2}>
-                    <Image
-                      className="animate__animated animate__zoomIn"
-                      src={Photo07}
-                      alt="photos"
-                      width="auto"
-                      height="auto"
-                      thumbnail
-                    />
-                  </Col>
-                </Row>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </Row>
-      </Container>
       <br></br>
       <br></br>
 
@@ -175,16 +171,16 @@ const Home = () => {
         </Flex.Item>
 
         <Flex.Item>
-          <ImageList images={currentPosts} style={{}}/>
-        </Flex.Item>
-
-        <Flex.Item>
           <Pagination
             totalPosts={images.length}
             postsPerPage={postsPerPage}
             setCurrentPage={setCurrentPage}
             currentPage={currentPage}
           />
+        </Flex.Item>
+
+        <Flex.Item>
+          <ImageList images={currentPosts} style={{}} />
         </Flex.Item>
       </Flex>
 

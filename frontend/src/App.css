@@ -34,7 +34,6 @@ body {
 
 .image-card {
   overflow: hidden;
-  text-align: center;
 }
 
 .image-card img {
@@ -53,6 +52,23 @@ body {
 .image-card p {
   margin: 0px;
   padding: 10px;
+}
+
+.image-detail {
+  overflow: hidden;
+}
+
+.image-detail img {
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 16px;
+  border-color: #cda174;
+  border-radius: 20px;
 }
 
 /* Navbar ***********************************************************/

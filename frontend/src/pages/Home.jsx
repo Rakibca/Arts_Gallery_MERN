@@ -18,7 +18,7 @@ import Photo07 from "../assets/photos/resized/photos07.jpg";
 const Home = () => {
   const [images, setImages] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(2);
+  const [postsPerPage, setPostsPerPage] = useState(3);
 
   const fetchImages = async () => {
     try {
@@ -48,9 +48,15 @@ const Home = () => {
         <Accordion defaultActiveKey="1">
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              <h6 style={{ color: "#640f28", fontFamily: "cursive" }}>
+              <h5
+                style={{
+                  color: "#640f28",
+                  fontFamily: "cursive",
+                  fontWeight: "bold",
+                }}
+              >
                 PROFILE
-              </h6>
+              </h5>
             </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
@@ -82,9 +88,15 @@ const Home = () => {
 
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <h6 style={{ color: "#640f28", fontFamily: "cursive" }}>
+              <h5
+                style={{
+                  color: "#640f28",
+                  fontFamily: "cursive",
+                  fontWeight: "bold",
+                }}
+              >
                 PHOTOS
-              </h6>
+              </h5>
             </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
@@ -175,7 +187,16 @@ const Home = () => {
 
       <Flex column alignItemsCenter>
         <Flex.Item>
-          <h3 style={{ color: "#cda174", fontFamily: "cursive", fontWeight: "bold", fontVariant: "small-caps"  }}>Art Gallery</h3>
+          <h3
+            style={{
+              color: "#cda174",
+              fontFamily: "cursive",
+              fontWeight: "bold",
+              fontVariant: "small-caps",
+            }}
+          >
+            Art Gallery
+          </h3>
         </Flex.Item>
 
         <Flex.Item>

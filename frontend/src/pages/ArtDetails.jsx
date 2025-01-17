@@ -79,7 +79,7 @@ const ArtDetails = () => {
           }}
         >
           <p style={{ marginBottom: "0px", fontFamily: "cursive" }}>
-            Please contact to purchase this art work using Interac e-Transfer.
+            Please contact to purchase using Interac e-Transfer.
           </p>
         </Alert>
       </Flex.Item>

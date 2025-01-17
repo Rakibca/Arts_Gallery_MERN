@@ -5,7 +5,7 @@ import Flex from "@react-css/flex";
 import Alert from "react-bootstrap/Alert";
 import PayPalIntegration from "../components/PayPalIntegration";
 
-const ImageDetail = () => {
+const ArtDetails = () => {
   const { id } = useParams();
   //console.log("MongoDB ID :", id);
   const [imageDetails, setImageDetails] = useState(null);
@@ -78,4 +78,4 @@ const ImageDetail = () => {
   );
 };
 
-export default ImageDetail;
+export default ArtDetails;

@@ -7,7 +7,7 @@ import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ImageDetail from "./pages/ImageDetail";
-import ImageAdmin from "./pages/ImageAdmin";
+import Admin from "./pages/Admin";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
@@ -44,7 +44,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/:id" element={<ImageDetail />} />
-            <Route path="/admin" element={<ImageAdmin />} />
+            <Route path="/admin" element={<Admin />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

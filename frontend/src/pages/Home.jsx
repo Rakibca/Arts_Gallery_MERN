@@ -48,13 +48,19 @@ const Home = () => {
         <Accordion defaultActiveKey="1">
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              <h6 style={{ color: "#640f28" }}>PROFILE</h6>
+              <h6 style={{ color: "#640f28", fontFamily: "cursive" }}>
+                PROFILE
+              </h6>
             </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
                 <Col md={11}>
                   <h6
-                    style={{ color: "#640f28", textAlign: "center" }}
+                    style={{
+                      color: "#640f28",
+                      textAlign: "center",
+                      fontFamily: "cursive",
+                    }}
                     className="animate__animated animate__bounceInLeft"
                   >
                     Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
@@ -76,7 +82,9 @@ const Home = () => {
 
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <h6 style={{ color: "#640f28" }}>PHOTOS</h6>
+              <h6 style={{ color: "#640f28", fontFamily: "cursive" }}>
+                PHOTOS
+              </h6>
             </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
@@ -167,7 +175,7 @@ const Home = () => {
 
       <Flex column alignItemsCenter>
         <Flex.Item>
-          <h3 style={{ color: "#cda174", fontWeight: "bold" }}>Art Gallery</h3>
+          <h3 style={{ color: "#cda174", fontFamily: "cursive", fontWeight: "bold", fontVariant: "small-caps"  }}>Art Gallery</h3>
         </Flex.Item>
 
         <Flex.Item>

@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import { toast } from "react-toastify";
 import Button from "react-bootstrap/Button";
 
-const ImageAdmin = () => {
+const Admin = () => {
   const [imageList, setImageList] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -134,4 +134,4 @@ const ImageAdmin = () => {
   );
 };
 
-export default ImageAdmin;
+export default Admin;

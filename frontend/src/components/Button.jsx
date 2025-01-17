@@ -4,7 +4,7 @@ const Button = ({ text, effectType }) => {
   return (
     <button
       style={{
-        margin: "1px",
+        fontSize: "15px",
         color: "#640f28",
         fontWeight: "bold",
         backgroundColor: "#cda174",

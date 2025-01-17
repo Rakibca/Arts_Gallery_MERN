@@ -50,14 +50,25 @@ const Contact = () => {
     <>
       <br></br>
       <Flex column alignItemsCenter>
-        <h3 style={{ color: "#cda174", fontWeight: "bold" }}>Get In Touch</h3>
+        <h3
+          style={{
+            color: "#cda174",
+            fontFamily: "cursive",
+            fontWeight: "bold",
+            fontVariant: "small-caps",
+          }}
+        >
+          Get In Touch
+        </h3>
         <br></br>
         <form
           onSubmit={handleSubmit}
           className="emailForm animate__animated animate__fadeInDown"
         >
           <Flex.Item>
-            <label style={{ color: "#ceb4a9" }}>Your Full Name:</label>
+            <label style={{ color: "#ceb4a9", fontFamily: "cursive" }}>
+              Your Full Name:
+            </label>
             <br></br>
             <input
               type="text"
@@ -68,7 +79,9 @@ const Contact = () => {
           </Flex.Item>
 
           <Flex.Item>
-            <label style={{ color: "#ceb4a9" }}>Your Email Address:</label>
+            <label style={{ color: "#ceb4a9", fontFamily: "cursive" }}>
+              Your Email Address:
+            </label>
             <br></br>
             <input
               type="email"
@@ -79,7 +92,9 @@ const Contact = () => {
           </Flex.Item>
 
           <Flex.Item>
-            <label style={{ color: "#ceb4a9" }}>Message:</label>
+            <label style={{ color: "#ceb4a9", fontFamily: "cursive" }}>
+              Message:
+            </label>
             <br></br>
             <textarea
               cols="55"
@@ -94,13 +109,24 @@ const Contact = () => {
           <Flex.Item>
             <button
               type="submit"
-              style={{ backgroundColor: "#a87883", borderRadius: "8px" }}
+              style={{
+                fontSize: "16px",
+                backgroundColor: "#cda174",
+                borderRadius: "10px",
+                color: "#640f28",
+                fontWeight: "bold",
+                fontFamily: "cursive",
+              }}
             >
-              <h5 style={{ color: "#640f28", fontWeight: "bold" }}>SUBMIT</h5>
+              SUBMIT
             </button>
           </Flex.Item>
           <br></br>
-          <Flex.Item>{sent && <p>Message sent!</p>}</Flex.Item>
+          <Flex.Item>
+            {sent && (
+              <p style={{ fontSize: "20px", color: "#eee" }}>Message sent. Thank You !</p>
+            )}
+          </Flex.Item>
         </form>
       </Flex>
 

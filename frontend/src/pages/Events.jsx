@@ -14,9 +14,19 @@ const Events = () => {
           marginTop: "40px",
         }}
       >
-        <Alert.Heading>Raonak's Solo Art Exhibition</Alert.Heading>
+        <Alert.Heading>
+          <h3
+            style={{
+              fontFamily: "cursive",
+              fontWeight: "bold",
+              fontVariant: "small-caps",
+            }}
+          >
+            Raonak's Solo Art Exhibition
+          </h3>
+        </Alert.Heading>
         <hr />
-        <p className="mb-0">
+        <p style={{ marginBottom: "0px", fontFamily: "cursive" }}>
           Location: The Genesis Centre<br></br>
           Date: April 27, 2025 <br></br>
           Time: 10am to 4pm MT <br></br>

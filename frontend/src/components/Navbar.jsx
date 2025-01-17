@@ -8,13 +8,7 @@ const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="title animate__animated animate__fadeInDown">
-        <h1
-          style={{
-            fontFamily: "Lucida Handwriting, cursive",
-          }}
-        >
-          Arts by Raonak
-        </h1>
+        <h1>Arts by Raonak</h1>
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

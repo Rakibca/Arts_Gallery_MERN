@@ -34,7 +34,14 @@ const ArtDetails = () => {
       <br></br>
 
       <Flex.Item>
-        <h4 style={{ color: "#ceb4a9" }}>
+        <h4
+          style={{
+            fontSize: "24px",
+            color: "#ceb4a9",
+            fontFamily: "cursive",
+            fontWeight: "bold",
+          }}
+        >
           {imageDetails?.originalName
             .split(".")
             .slice(0, -1)
@@ -47,9 +54,12 @@ const ArtDetails = () => {
       <br></br>
 
       <Flex.Item>
-        <h4 style={{ color: "#ceb4a9" }}>
+        <h4
+          style={{ fontSize: "20px", color: "#cda174", fontFamily: "cursive" }}
+        >
           {"Price: $" +
-            imageDetails?.originalName.split(" ").pop().slice(0, -5)}
+            imageDetails?.originalName.split(" ").pop().slice(0, -5) +
+            " CAD"}
         </h4>
       </Flex.Item>
       <br></br>
@@ -63,10 +73,14 @@ const ArtDetails = () => {
         <Alert
           variant="warning"
           className="animate__animated animate__fadeInDown"
+          style={{
+            color: "#640f28",
+            backgroundColor: "#cda174",
+          }}
         >
-          <p>
+          <p style={{ marginBottom: "0px", fontFamily: "cursive" }}>
             Please send me a message if you would like to purchase this art work
-            by e-transfer.
+            using Interac e-Transfer.
           </p>
         </Alert>
       </Flex.Item>

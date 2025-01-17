@@ -5,11 +5,6 @@ body {
   background-attachment: fixed;
 }
 
-/* h1 {
-  font-family: "Lucida Handwriting", cursive;
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
 /* Accordion ***********************************************************/
 .accordion {
   padding: 0px 200px !important;
@@ -93,7 +88,6 @@ nav .title {
   font-weight: bold;
   text-decoration: none;
   color: #640f28;
-
 }
 
 nav .title h1 {

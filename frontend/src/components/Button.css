@@ -6,7 +6,6 @@
   transform: scale(1.1);
 }
 
-/* Button.css */
 .effect2 {
   transition: box-shadow 0.3s, border-radius 0.3s;
 }
@@ -16,7 +15,6 @@
   border-radius: 20px;
 }
 
-/* Button.css */
 .effect3 {
   transition: transform 0.3s, background-position 0.5s ease;
 }
@@ -26,7 +24,6 @@
   background-position: right bottom;
 }
 
-/* Button.css */
 .effect4 {
   transition: transform 0.3s;
 }
@@ -35,7 +32,6 @@
   transform: rotate(45deg);
 }
 
-/* Button.css */
 .effect5 {
   transition: transform 0.3s;
 }

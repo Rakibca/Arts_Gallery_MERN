@@ -10,7 +10,7 @@ const Button = ({ text, effectType }) => {
         backgroundColor: "#cda174",
         borderRadius: "10px",
       }}
-      className={`custom-button ${effectType}`}
+      className={`${effectType}`}
     >
       {text}
     </button>

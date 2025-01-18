@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "animate.css";
-import AllImageDisplay from "../components/AllImageDisplay";
-import Pagination from "../components/Pagination";
 import Flex from "@react-css/flex";
+import Pagination from "../components/Pagination";
+import AllImageDisplay from "../components/AllImageDisplay";
 
 const ArtGallery = () => {
   const [imageGallery, setImageGallery] = useState([]);
@@ -34,7 +34,7 @@ const ArtGallery = () => {
     <>
       <br></br>
       <Flex column alignItemsCenter>
-        <Flex.Item>
+        <Flex.Item className="animate__animated animate__fadeInDown">
           <h3
             style={{
               color: "#cda174",
@@ -43,12 +43,12 @@ const ArtGallery = () => {
               fontVariant: "small-caps",
             }}
           >
-            Art Gallery
+            Arts Collection
           </h3>
         </Flex.Item>
       </Flex>
 
-      <Flex.Item>
+      <Flex.Item className="animate__animated animate__fadeInDown">
         <Pagination
           totalPosts={imageGallery.length}
           postsPerPage={postsPerPage}
@@ -57,7 +57,7 @@ const ArtGallery = () => {
         />
       </Flex.Item>
 
-      <Flex.Item>
+      <Flex.Item className="animate__animated animate__fadeInDown">
         <AllImageDisplay imageGallery={currentPosts} />
       </Flex.Item>
 

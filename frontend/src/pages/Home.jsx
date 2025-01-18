@@ -38,6 +38,17 @@ const Home = () => {
     fetchImages();
   }, []);
 
+  const buttonStyle = {
+    margin: "15px",
+    fontSize: "18px",
+    fontFamily: "cursive",
+    color: "#640f28",
+    fontWeight: "bold",
+    fontVariant: "small-caps",
+    backgroundColor: "#cda174",
+    borderRadius: "10px",
+  };
+
   // Determine the arts to display based on the selected medium string
   const renderMedium = () => {
     switch (selectedMedium) {
@@ -222,16 +233,47 @@ const Home = () => {
       <br></br>
 
       <Flex column alignItemsCenter>
+        <Flex.Item className="animate__animated animate__fadeInDown">
+          <h3
+            style={{
+              color: "#cda174",
+              fontFamily: "cursive",
+              fontWeight: "bold",
+              fontVariant: "small-caps",
+            }}
+          >
+            Arts by Raonak
+          </h3>
+        </Flex.Item>
+
         <Flex.Item>
           <div>
-            <button onClick={() => setSelectedMedium("Water")}>
-              Water Color
+            <button
+              className="animate__animated animate__fadeInDown"
+              style={buttonStyle}
+              onClick={() => setSelectedMedium("Water")}
+            >
+              Water Colour
             </button>
-            <button onClick={() => setSelectedMedium("Acrylic")}>
+            <button
+              className="animate__animated animate__fadeInDown"
+              style={buttonStyle}
+              onClick={() => setSelectedMedium("Acrylic")}
+            >
               Acrylic
             </button>
-            <button onClick={() => setSelectedMedium("Oil")}>Oil</button>
-            <button onClick={() => setSelectedMedium("Drawing")}>
+            <button
+              className="animate__animated animate__fadeInDown"
+              style={buttonStyle}
+              onClick={() => setSelectedMedium("Oil")}
+            >
+              Oil
+            </button>
+            <button
+              className="animate__animated animate__fadeInDown"
+              style={buttonStyle}
+              onClick={() => setSelectedMedium("Drawing")}
+            >
               Drawing & Sketch
             </button>
           </div>

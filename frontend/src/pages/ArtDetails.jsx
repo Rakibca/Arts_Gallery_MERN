@@ -13,9 +13,9 @@ const ArtDetails = () => {
   const fetchImageDetails = async () => {
     try {
       const url = `http://localhost:3000/api/images/${id}`;
-      const result = await fetch(url);
-      const { data } = await result.json();
-      //console.log(data);
+      const response = await fetch(url);
+      const { data } = await response.json();
+      console.log(data);
       setImageDetails(data);
     } catch (err) {
       alert("Internal Server Error, Please try again !!");

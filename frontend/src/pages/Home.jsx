@@ -45,8 +45,9 @@ const Home = () => {
     <>
       <br></br>
       <Flex column alignItemsCenter>
-        <Accordion defaultActiveKey="1">
-          <Accordion.Item eventKey="1">
+        {/* <Accordion defaultActiveKey="0"> */}
+        <Accordion defaultActiveKey={["0"]}>
+          <Accordion.Item eventKey="0">
             <Accordion.Header>
               <h5
                 style={{
@@ -86,7 +87,7 @@ const Home = () => {
             </Accordion.Body>
           </Accordion.Item>
 
-          <Accordion.Item eventKey="2">
+          <Accordion.Item eventKey="1">
             <Accordion.Header>
               <h5
                 style={{
@@ -209,7 +210,7 @@ const Home = () => {
         </Flex.Item>
 
         <Flex.Item>
-          <ImageList images={currentPosts} style={{}} />
+          <ImageList images={currentPosts} />
         </Flex.Item>
       </Flex>
 

@@ -40,8 +40,8 @@ const Admin = () => {
         "Content-Type": "multipart/form-data",
         body: formData,
       };
-      const result = await fetch(url, options);
-      const { data, message } = await result.json();
+      const response = await fetch(url, options);
+      const { data, message } = await response.json();
       fetchImages();
       setLoading(false);
       toast["success"](message);
@@ -61,8 +61,8 @@ const Admin = () => {
         method: "DELETE",
         "Content-Type": "multipart/form-data",
       };
-      const result = await fetch(url, options);
-      const { data, message } = await result.json();
+      const response = await fetch(url, options);
+      const { data, message } = await response.json();
       fetchImages();
       toast["success"](message);
     } catch (err) {

@@ -19,7 +19,7 @@ const App = () => {
     // Simulate loading for 4 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
   return (

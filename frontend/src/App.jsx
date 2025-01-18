@@ -6,6 +6,7 @@ import Flex from "@react-css/flex";
 import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import ArtGallery from "./pages/ArtGallery";
 import ArtDetails from "./pages/ArtDetails";
 import Admin from "./pages/Admin";
 import Events from "./pages/Events";
@@ -43,6 +44,7 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<ArtGallery />} />
             <Route path="/:id" element={<ArtDetails />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/events" element={<Events />} />

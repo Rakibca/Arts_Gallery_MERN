@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
 import "animate.css";
-import AllImageDisplay from "../components/AllImageDisplay";
+import Flex from "@react-css/flex";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Image from "react-bootstrap/Image";
 import ImageWater from "../components/ImageWater";
 import ImageAcrylic from "../components/ImageAcrylic";
 import ImageOil from "../components/ImageOil";
 import ImageDrawing from "../components/ImageDrawing";
-import Pagination from "../components/Pagination";
 import Accordion from "react-bootstrap/Accordion";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
-import Flex from "@react-css/flex";
 import Photo01 from "../assets/photos/resized/photos01.jpg";
 import Photo02 from "../assets/photos/resized/photos02.jpg";
 import Photo03 from "../assets/photos/resized/photos03.jpg";
@@ -21,9 +19,7 @@ import Photo07 from "../assets/photos/resized/photos07.jpg";
 
 const Home = () => {
   const [images, setImages] = useState([]);
-  const [selectedMedium, setSelectedMedium] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(3);
+  const [selectedMedium, setSelectedMedium] = useState("Water");
 
   const fetchImages = async () => {
     try {
@@ -41,10 +37,6 @@ const Home = () => {
   useEffect(() => {
     fetchImages();
   }, []);
-
-  const lastPostIndex = currentPage * postsPerPage;
-  const firstPostIndex = lastPostIndex - postsPerPage;
-  const currentPosts = images.slice(firstPostIndex, lastPostIndex);
 
   // Determine the arts to display based on the selected medium string
   const renderMedium = () => {
@@ -231,43 +223,23 @@ const Home = () => {
 
       <Flex column alignItemsCenter>
         <Flex.Item>
-          <h3
-            style={{
-              color: "#cda174",
-              fontFamily: "cursive",
-              fontWeight: "bold",
-              fontVariant: "small-caps",
-            }}
-          >
-            Art Gallery
-          </h3>
+          <div>
+            <button onClick={() => setSelectedMedium("Water")}>
+              Water Color
+            </button>
+            <button onClick={() => setSelectedMedium("Acrylic")}>
+              Acrylic
+            </button>
+            <button onClick={() => setSelectedMedium("Oil")}>Oil</button>
+            <button onClick={() => setSelectedMedium("Drawing")}>
+              Drawing & Sketch
+            </button>
+          </div>
         </Flex.Item>
 
         <Flex.Item>
-          <Pagination
-            totalPosts={images.length}
-            postsPerPage={postsPerPage}
-            setCurrentPage={setCurrentPage}
-            currentPage={currentPage}
-          />
+          <div>{renderMedium()}</div>
         </Flex.Item>
-
-        <Flex.Item>
-          <AllImageDisplay images={currentPosts} />
-        </Flex.Item>
-
-        <Flex.Item>
-          <button onClick={() => setSelectedMedium("Water")}>
-            Water Color
-          </button>
-          <button onClick={() => setSelectedMedium("Acrylic")}>Acrylic</button>
-          <button onClick={() => setSelectedMedium("Oil")}>Oil</button>
-          <button onClick={() => setSelectedMedium("Drawing")}>
-            Drawing & Sketch
-          </button>
-        </Flex.Item>
-
-        <Flex.Item>{renderMedium()}</Flex.Item>
       </Flex>
 
       <br></br>

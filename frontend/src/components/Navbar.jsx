@@ -18,6 +18,14 @@ const Navbar = () => {
       <ul className={menuOpen ? "open" : ""}>
         <li>
           <NavLink
+            to="/gallery"
+            className="animate__animated animate__fadeInDown"
+          >
+            <Button text="GALLERY" effectType="effect1" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/events"
             className="animate__animated animate__fadeInDown"
           >

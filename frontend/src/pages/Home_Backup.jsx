@@ -54,10 +54,9 @@ const Home = () => {
                   color: "#640f28",
                   fontFamily: "cursive",
                   fontWeight: "bold",
-                  fontVariant: "small-caps",
                 }}
               >
-                Profile
+                PROFILE
               </h5>
             </Accordion.Header>
             <Accordion.Body>
@@ -95,10 +94,9 @@ const Home = () => {
                   color: "#640f28",
                   fontFamily: "cursive",
                   fontWeight: "bold",
-                  fontVariant: "small-caps",
                 }}
               >
-                Photos
+                PHOTOS
               </h5>
             </Accordion.Header>
             <Accordion.Body>
@@ -179,26 +177,6 @@ const Home = () => {
                     thumbnail
                   />
                 </Col>
-              </Row>
-            </Accordion.Body>
-          </Accordion.Item>
-
-          <Accordion.Item eventKey="2">
-            <Accordion.Header>
-              <h5
-                style={{
-                  color: "#640f28",
-                  fontFamily: "cursive",
-                  fontWeight: "bold",
-                  fontVariant: "small-caps",
-                }}
-              >
-                Prizes, Awards & Certificates
-              </h5>
-            </Accordion.Header>
-            <Accordion.Body>
-              <Row className="justify-content-md-center">
-                <Col></Col>
               </Row>
             </Accordion.Body>
           </Accordion.Item>

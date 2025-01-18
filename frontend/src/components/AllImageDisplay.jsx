@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const ImageList = ({ images }) => {
+const AllImageDisplay = ({ images }) => {
   return (
     <div className="image-grid">
       {images.map((image, index) => (
@@ -14,4 +14,4 @@ const ImageList = ({ images }) => {
   );
 };
 
-export default ImageList;
+export default AllImageDisplay;

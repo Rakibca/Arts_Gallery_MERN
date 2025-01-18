@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "animate.css";
-import ImageList from "../components/ImageList";
+import ImageDisplay from "../components/AllImageDisplay";
 import Pagination from "../components/Pagination";
 import Accordion from "react-bootstrap/Accordion";
 import Col from "react-bootstrap/Col";
@@ -210,7 +210,7 @@ const Home = () => {
         </Flex.Item>
 
         <Flex.Item>
-          <ImageList images={currentPosts} />
+          <ImageDisplay images={currentPosts} />
         </Flex.Item>
       </Flex>
 

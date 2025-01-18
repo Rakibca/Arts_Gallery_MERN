@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import "animate.css";
-import ImageList from "../components/ImageList";
+import AllImageDisplay from "../components/AllImageDisplay";
+import ImageWater from "../components/ImageWater";
+import ImageAcrylic from "../components/ImageAcrylic";
+import ImageOil from "../components/ImageOil";
+import ImageDrawing from "../components/ImageDrawing";
 import Pagination from "../components/Pagination";
 import Accordion from "react-bootstrap/Accordion";
 import Col from "react-bootstrap/Col";
@@ -17,6 +21,7 @@ import Photo07 from "../assets/photos/resized/photos07.jpg";
 
 const Home = () => {
   const [images, setImages] = useState([]);
+  const [selectedMedium, setSelectedMedium] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(3);
 
@@ -40,6 +45,22 @@ const Home = () => {
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = images.slice(firstPostIndex, lastPostIndex);
+
+  // Determine the arts to display based on the selected medium string
+  const renderMedium = () => {
+    switch (selectedMedium) {
+      case "Water":
+        return <ImageWater images={images} />;
+      case "Acrylic":
+        return <ImageAcrylic images={images} />;
+      case "Oil":
+        return <ImageOil images={images} />;
+      case "Drawing":
+        return <ImageDrawing images={images} />;
+      default:
+        return <div>No Art Medium Selected !</div>;
+    }
+  };
 
   return (
     <>
@@ -232,8 +253,21 @@ const Home = () => {
         </Flex.Item>
 
         <Flex.Item>
-          <ImageList images={currentPosts} />
+          <AllImageDisplay images={currentPosts} />
         </Flex.Item>
+
+        <Flex.Item>
+          <button onClick={() => setSelectedMedium("Water")}>
+            Water Color
+          </button>
+          <button onClick={() => setSelectedMedium("Acrylic")}>Acrylic</button>
+          <button onClick={() => setSelectedMedium("Oil")}>Oil</button>
+          <button onClick={() => setSelectedMedium("Drawing")}>
+            Drawing & Sketch
+          </button>
+        </Flex.Item>
+
+        <Flex.Item>{renderMedium()}</Flex.Item>
       </Flex>
 
       <br></br>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "animate.css";
+import "./Home.css";
 import Flex from "@react-css/flex";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -49,7 +50,7 @@ const Home = () => {
     borderRadius: "10px",
   };
 
-  // Determine the arts to display based on the selected medium string
+  // Determine the arts to display based on the selected medium
   const renderMedium = () => {
     switch (selectedMedium) {
       case "Water":
@@ -61,7 +62,11 @@ const Home = () => {
       case "Drawing":
         return <ImageDrawing images={images} />;
       default:
-        return <div>No Art Medium Selected !</div>;
+        return (
+          <div>
+            <p>No Art Medium Selected !</p>
+          </div>
+        );
     }
   };
 
@@ -96,16 +101,17 @@ const Home = () => {
                     className="animate__animated animate__bounceInLeft"
                   >
                     Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
-                    born in Montreal on November 2001. I moved to Calgary with
-                    my parents in 2005. I have graduated from Nelson Mandela
-                    High School in 2020.I have taken some courses from Mt. Royal
-                    University. I am attending program at Springboard Centre. I
-                    live in Taradale community in North East, Calgary, Alberta.
-                    My Dad is Rony and Mom is Nasima. I have a passion for Art
-                    and Painting. I love sketching, water coloring, and acrylic
-                    painting. I received some awards from my community Program
-                    and Art competition. I try to see people with my eyes and
-                    try to put them in my painting.
+                    born in Montreal in November of 2001. I moved to Calgary
+                    with my parents in 2005. I have graduated the from Nelson
+                    Mandela High School in 2020. I have taken some courses from
+                    Mt. Royal University. Currently I am attending a program at
+                    the Springboard Centre. I live in the NE community of
+                    Taradale, Calgary, Alberta. My Dad is Rony and Mom is
+                    Nasima. I have a passion for Art and Painting. I love
+                    sketching, drawing, water colouring, oil and acrylic
+                    painting. I received some awards from my local community at
+                    an Arts competition. I try to see people with my eyes and
+                    put them in my painting.
                   </h6>
                 </Col>
               </Row>
@@ -242,43 +248,51 @@ const Home = () => {
               fontVariant: "small-caps",
             }}
           >
-            Arts by Raonak
+            Art Works
           </h3>
         </Flex.Item>
+      </Flex>
 
-        <Flex.Item>
-          <div>
-            <button
-              className="animate__animated animate__fadeInDown"
-              style={buttonStyle}
-              onClick={() => setSelectedMedium("Water")}
-            >
-              Water Colour
-            </button>
-            <button
-              className="animate__animated animate__fadeInDown"
-              style={buttonStyle}
-              onClick={() => setSelectedMedium("Acrylic")}
-            >
-              Acrylic
-            </button>
-            <button
-              className="animate__animated animate__fadeInDown"
-              style={buttonStyle}
-              onClick={() => setSelectedMedium("Oil")}
-            >
-              Oil
-            </button>
-            <button
-              className="animate__animated animate__fadeInDown"
-              style={buttonStyle}
-              onClick={() => setSelectedMedium("Drawing")}
-            >
-              Drawing & Sketch
-            </button>
-          </div>
+      <Flex row justifyContent="center">
+        <Flex.Item className="zoom-effect">
+          <button
+            className="animate__animated animate__fadeInDown"
+            style={buttonStyle}
+            onClick={() => setSelectedMedium("Water")}
+          >
+            Water Colour
+          </button>
         </Flex.Item>
+        <Flex.Item className="zoom-effect">
+          <button
+            className="animate__animated animate__fadeInDown"
+            style={buttonStyle}
+            onClick={() => setSelectedMedium("Acrylic")}
+          >
+            Acrylic
+          </button>
+        </Flex.Item>
+        <Flex.Item className="zoom-effect">
+          <button
+            className="animate__animated animate__fadeInDown"
+            style={buttonStyle}
+            onClick={() => setSelectedMedium("Oil")}
+          >
+            Oil
+          </button>
+        </Flex.Item>
+        <Flex.Item className="zoom-effect">
+          <button
+            className="animate__animated animate__fadeInDown"
+            style={buttonStyle}
+            onClick={() => setSelectedMedium("Drawing")}
+          >
+            Drawing & Sketch
+          </button>
+        </Flex.Item>
+      </Flex>
 
+      <Flex column alignItemsCenter>
         <Flex.Item>
           <div>{renderMedium()}</div>
         </Flex.Item>

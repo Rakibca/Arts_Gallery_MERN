@@ -28,7 +28,7 @@ const ArtDetails = () => {
 
   const priceInt = imageDetails?.originalName.split(" ").pop().slice(0, -5);
   const price = priceInt + ".00";
-  console.log("Art price is: " + price);
+  console.log("Art price is: " + price + " CAD");
 
   return (
     <Flex column alignItemsCenter>

@@ -1,6 +1,6 @@
 import { PayPalButton } from "react-paypal-button-v2";
 
-const PayPalIntegration = () => {
+const PayPalIntegration = (props) => {
   const styles = {
     label: "buynow",
   };
@@ -15,7 +15,7 @@ const PayPalIntegration = () => {
               {
                 amount: {
                   currency_code: "CAD",
-                  value: "200.00",
+                  value: `${props.priceData}`,
                 },
               },
             ],

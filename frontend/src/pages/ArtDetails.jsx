@@ -26,6 +26,10 @@ const ArtDetails = () => {
     fetchImageDetails();
   }, [id]);
 
+  const priceInt = imageDetails?.originalName.split(" ").pop().slice(0, -5);
+  const price = priceInt + ".00";
+  console.log("Art price is: " + price);
+
   return (
     <Flex column alignItemsCenter>
       <Flex.Item className="image-detail">
@@ -65,7 +69,7 @@ const ArtDetails = () => {
       <br></br>
 
       <Flex.Item>
-        <PayPalIntegration />
+        <PayPalIntegration priceData={price} />
       </Flex.Item>
       <br></br>
 

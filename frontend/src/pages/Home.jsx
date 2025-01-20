@@ -5,6 +5,8 @@ import Flex from "@react-css/flex";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
+//import Loading from "../components/Loading";
+//import Loading2 from "../components/Loading2";
 import ImageWater from "../components/ImageWater";
 import ImageAcrylic from "../components/ImageAcrylic";
 import ImageOil from "../components/ImageOil";
@@ -71,7 +73,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div>
       <br></br>
       <Flex column alignItemsCenter>
         {/* <Accordion defaultActiveKey="0"> */}
@@ -306,7 +308,7 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
-    </>
+    </div>
   );
 };
 

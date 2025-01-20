@@ -107,6 +107,9 @@ nav .menu span {
   border-width: 8px;
   border-color: #cda174;
   border-radius: 20px;
+  /* background-color: "transparent";
+  border: "none";
+  visibility: "visible"; */
 }
 
 .image-card img:hover {

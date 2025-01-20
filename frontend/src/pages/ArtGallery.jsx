@@ -7,7 +7,7 @@ import AllImageDisplay from "../components/AllImageDisplay";
 const ArtGallery = () => {
   const [imageGallery, setImageGallery] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(3);
+  const [postsPerPage, setPostsPerPage] = useState(5);
 
   const fetchImages = async () => {
     try {

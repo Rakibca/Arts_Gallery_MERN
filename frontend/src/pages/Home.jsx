@@ -112,6 +112,11 @@ const Home = () => {
                     painting. I received some awards from my local community at
                     an Arts competition. I try to see people with my eyes and
                     put them in my painting.
+                    <hr></hr>
+                    We are arranging a Solo Art Exhibition at the Genesis Centre
+                    on Sunday, April 27, 2025 from 10am to 4pm MT. You
+                    attendance and appreciation will help me to do more creative
+                    Art Works in the future. Please check upcoming events above.
                   </h6>
                 </Col>
               </Row>

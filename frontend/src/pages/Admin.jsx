@@ -78,7 +78,7 @@ const Admin = () => {
           style={{ color: "#ceb4a9", textAlign: "center", padding: "20px" }}
           className="animate__animated animate__fadeInDown"
         >
-          Admin
+          Admin Panel
         </h1>
       </header>
 

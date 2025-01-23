@@ -12,7 +12,8 @@ const ArtDetails = () => {
 
   const fetchImageDetails = async () => {
     try {
-      const url = `http://localhost:3000/api/images/${id}`;
+      //const url = `http://localhost:3000/api/images/${id}`;
+      const url = `http://193.43.134.219:3000/api/images/${id}`;
       const response = await fetch(url);
       const { data } = await response.json();
       console.log(data);

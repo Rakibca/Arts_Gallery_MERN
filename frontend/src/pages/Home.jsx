@@ -26,7 +26,8 @@ const Home = () => {
 
   const fetchImages = async () => {
     try {
-      const url = "http://localhost:3000/api/images";
+      //const url = "http://localhost:3000/api/images";
+      const url = "http://193.43.134.219:3000/api/images";
       const response = await fetch(url);
       const { data } = await response.json();
       //console.log(data);

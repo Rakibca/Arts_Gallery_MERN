@@ -11,15 +11,16 @@ app.get("/", (req, res) => {
   res.send("Backend server is running !!");
 });
 
-//app.use(cors());
-app.use(
-  cors({
-    origin: [
-      "https://raonak.ca",
-      "https://www.raonak.ca",
-    ],
-  })
-);
+app.use(cors());
+// app.use(
+//   cors({
+//     origin: [
+//       "https://raonak.ca",
+//       "https://www.raonak.ca",
+//     ],
+//   })
+// );
+
 app.use(bodyParser.json());
 // Middleware to parse URL-encoded bodies //
 app.use(bodyParser.urlencoded({ extended: true }));

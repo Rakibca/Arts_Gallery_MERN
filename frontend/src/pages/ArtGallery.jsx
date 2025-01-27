@@ -7,12 +7,12 @@ import AllImageDisplay from "../components/AllImageDisplay";
 const ArtGallery = () => {
   const [imageGallery, setImageGallery] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(5);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   const fetchImages = async () => {
     try {
       //const url = "http://localhost:3000/api/images";
-      const url = "http://193.43.134.219:3000/api/images";
+      const url = "https://193.43.134.219:3000/api/images";
       const response = await fetch(url);
       const { data } = await response.json();
       //console.log(data);

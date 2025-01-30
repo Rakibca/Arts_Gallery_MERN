@@ -12,7 +12,7 @@ const Admin = () => {
   const fetchImages = async () => {
     try {
       //const url = "http://localhost:3000/api/images";
-      const url = "https://193.43.134.219:3000/api/images";
+      const url = "http://193.43.134.219:3000/api/images";
       const result = await fetch(url);
       const { data } = await result.json();
       //console.log(data);
@@ -36,7 +36,7 @@ const Admin = () => {
     });
     try {
       //const url = "http://localhost:3000/api/images/uploads";
-      const url = "https://193.43.134.219:3000/api/images/uploads";
+      const url = "http://193.43.134.219:3000/api/images/uploads";
       const options = {
         method: "POST",
         "Content-Type": "multipart/form-data",
@@ -59,7 +59,7 @@ const Admin = () => {
     //console.log("Image id :", imageId);
     try {
       //const url = `http://localhost:3000/api/images/${imageId}`;
-      const url = `https://193.43.134.219:3000/api/images/${imageId}`;
+      const url = `http://193.43.134.219:3000/api/images/${imageId}`;
       const options = {
         method: "DELETE",
         "Content-Type": "multipart/form-data",

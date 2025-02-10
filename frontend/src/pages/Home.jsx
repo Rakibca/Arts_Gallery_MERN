@@ -101,7 +101,7 @@ const Home = () => {
                       textAlign: "center",
                       fontFamily: "cursive",
                     }}
-                    className="animate__animated animate__bounceInLeft"
+                    // className="animate__animated animate__bounceInLeft"
                   >
                     Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
                     born in Montreal in November of 2001. I moved to Calgary
@@ -236,7 +236,18 @@ const Home = () => {
             </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
-                <Col></Col>
+                <Col md={11}>
+                  <h6
+                    style={{
+                      color: "#640f28",
+                      textAlign: "center",
+                      fontFamily: "cursive",
+                    }}
+                    // className="animate__animated animate__bounceInLeft"
+                  >
+                    COMING SOON !
+                  </h6>
+                </Col>
               </Row>
             </Accordion.Body>
           </Accordion.Item>

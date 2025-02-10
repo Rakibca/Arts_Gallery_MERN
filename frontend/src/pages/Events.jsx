@@ -27,10 +27,13 @@ const Events = () => {
         </Alert.Heading>
         <hr />
         <p style={{ marginBottom: "0px", fontFamily: "cursive" }}>
-          Location: The Genesis Centre<br></br>
-          Date: April 27, 2025 <br></br>
-          Time: 10am to 4pm MT <br></br>
-          Address: 7555 Falconridge Blvd NE #10, Calgary, AB T3J 0C9
+          <strong>Inaugurated by:</strong> Honourable MLA Irfan Sabir<br></br>
+          <strong>Venue:</strong> The Genesis Centre, Multicultural Room A
+          <br></br>
+          <strong>Address:</strong> 7555 Falconridge Blvd NE #10, Calgary, AB
+          T3J 0C9<br></br>
+          <strong>Date:</strong> April 27, 2025 <br></br>
+          <strong>Time:</strong> 10am to 4pm MDT
         </p>
       </Alert>
 

@@ -5,8 +5,8 @@ import { ToastContainer } from "react-toastify";
 import { toast } from "react-toastify";
 import Button from "react-bootstrap/Button";
 
-//const URL = "http://localhost:3000/api/images";
-const URL = "http://193.43.134.219:3000/api/images";
+//const API_URL = "http://localhost:3000/api/images";
+const API_URL = "http://193.43.134.219:3000/api/images";
 
 const Admin = () => {
   const [imageList, setImageList] = useState([]);
@@ -14,7 +14,7 @@ const Admin = () => {
 
   const fetchImages = async () => {
     try {
-      const result = await fetch(URL);
+      const result = await fetch(API_URL);
       const { data } = await result.json();
       //console.log(data);
       setImageList(data);
@@ -36,7 +36,7 @@ const Admin = () => {
       formData.append("images", file);
     });
     try {
-      const URL_1 = `${URL}/uploads`;
+      const URL_1 = `${API_URL}/uploads`;
       const options = {
         method: "POST",
         "Content-Type": "multipart/form-data",
@@ -58,7 +58,7 @@ const Admin = () => {
   const handleDelete = async (imageId) => {
     //console.log("Image id :", imageId);
     try {
-      const URL_2 = `${URL}/${imageId}`;
+      const URL_2 = `${API_URL}/${imageId}`;
       const options = {
         method: "DELETE",
         "Content-Type": "multipart/form-data",

@@ -12,9 +12,9 @@ const ArtDetails = () => {
 
   const fetchImageDetails = async () => {
     try {
-      //const URL = `http://localhost:3000/api/images/${id}`;
-      const URL = `http://193.43.134.219:3000/api/images/${id}`;
-      const response = await fetch(URL);
+      //const API_URL = `http://localhost:3000/api/images/${id}`;
+      const API_URL = `http://193.43.134.219:3000/api/images/${id}`;
+      const response = await fetch(API_URL);
       const { data } = await response.json();
       //console.log(data);
       setImageDetails(data);

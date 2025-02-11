@@ -5,20 +5,21 @@ import { ToastContainer } from "react-toastify";
 import { toast } from "react-toastify";
 import Button from "react-bootstrap/Button";
 
+//const URL = "http://localhost:3000/api/images";
+const URL = "http://193.43.134.219:3000/api/images";
+
 const Admin = () => {
   const [imageList, setImageList] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const fetchImages = async () => {
     try {
-      //const url = "http://localhost:3000/api/images";
-      const url = "http://193.43.134.219:3000/api/images";
-      const result = await fetch(url);
+      const result = await fetch(URL);
       const { data } = await result.json();
       //console.log(data);
       setImageList(data);
-    } catch (err) {
-      console.log("Error !!", err);
+    } catch (error) {
+      console.log("Error: ", error);
       alert("Internal Server Error, Please try again !!");
     }
   };
@@ -35,14 +36,13 @@ const Admin = () => {
       formData.append("images", file);
     });
     try {
-      //const url = "http://localhost:3000/api/images/uploads";
-      const url = "http://193.43.134.219:3000/api/images/uploads";
+      const URL_1 = `${URL}/uploads`;
       const options = {
         method: "POST",
         "Content-Type": "multipart/form-data",
         body: formData,
       };
-      const response = await fetch(url, options);
+      const response = await fetch(URL_1, options);
       const { data, message } = await response.json();
       fetchImages();
       setLoading(false);
@@ -58,13 +58,12 @@ const Admin = () => {
   const handleDelete = async (imageId) => {
     //console.log("Image id :", imageId);
     try {
-      //const url = `http://localhost:3000/api/images/${imageId}`;
-      const url = `http://193.43.134.219:3000/api/images/${imageId}`;
+      const URL_2 = `${URL}/${imageId}`;
       const options = {
         method: "DELETE",
         "Content-Type": "multipart/form-data",
       };
-      const response = await fetch(url, options);
+      const response = await fetch(URL_2, options);
       const { data, message } = await response.json();
       fetchImages();
       toast["success"](message);

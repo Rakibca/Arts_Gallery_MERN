@@ -5,6 +5,7 @@ import Flex from "@react-css/flex";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
+import fetchAPI from "../components/fetchAPI.jsx";
 //import Loading from "../components/Loading";
 //import Loading2 from "../components/Loading2";
 import ImageWater from "../components/ImageWater";
@@ -22,23 +23,19 @@ import Photo07 from "../assets/photos/resized/photos07.jpg";
 
 const Home = () => {
   const [images, setImages] = useState([]);
-  const [selectedMedium, setSelectedMedium] = useState("Water");
+  const [selectedMedium, setSelectedMedium] = useState("Acrylic");
 
-  const fetchImages = async () => {
-    try {
-      //const url = "http://localhost:3000/api/images";
-      const url = "http://193.43.134.219:3000/api/images";
-      const response = await fetch(url);
-      const { data } = await response.json();
-      //console.log(data);
-      setImages(data);
-    } catch (err) {
-      console.log("Error !!", err);
-      alert("Internal Server Error, Please try again !!");
-    }
-  };
-
+  // Fetch data when the component mounts
   useEffect(() => {
+    const fetchImages = async () => {
+      const result = await fetchAPI();
+      if (result.error) {
+        console.error(result.error);
+      } else {
+        setImages(result);
+      }
+    };
+
     fetchImages();
   }, []);
 
@@ -306,7 +303,7 @@ const Home = () => {
             style={buttonStyle}
             onClick={() => setSelectedMedium("Drawing")}
           >
-            Drawing & Sketch
+            Pencil Sketch
           </button>
         </Flex.Item>
       </Flex>

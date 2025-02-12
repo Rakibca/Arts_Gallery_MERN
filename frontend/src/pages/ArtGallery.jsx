@@ -2,6 +2,17 @@ import { useEffect, useState } from "react";
 import "animate.css";
 import Flex from "@react-css/flex";
 import fetchAPI from "../components/fetchAPI.jsx";
+import {
+  ButtonBack,
+  ButtonNext,
+  CarouselProvider,
+  DotGroup,
+  ImageWithZoom,
+  Slide,
+  Slider,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import "./ArtGallery.css";
 import Pagination from "../components/Pagination";
 import AllImageDisplay from "../components/AllImageDisplay";
 
@@ -30,6 +41,27 @@ const ArtGallery = () => {
 
   return (
     <>
+      <br></br>
+      <CarouselProvider
+        visibleSlides={1}
+        totalSlides={61}
+        step={3}
+        naturalSlideWidth={400}
+        naturalSlideHeight={500}
+        hasMasterSpinner
+      >
+        <Slider className="slider">
+          {imageGallery.map((image, index) => (
+            <Slide key={index}>
+              <ImageWithZoom src={image.imageURL} alt={image.originalName} />
+            </Slide>
+          ))}
+        </Slider>
+        <ButtonBack className="buttonBack">Back</ButtonBack>
+        <ButtonNext className="buttonNext">Next</ButtonNext>
+        <DotGroup className="dotGroup" />
+      </CarouselProvider>
+
       <br></br>
       <Flex column alignItemsCenter>
         <Flex.Item className="animate__animated animate__fadeInDown">

@@ -52,7 +52,7 @@ const ArtGallery = () => {
               fontVariant: "small-caps",
             }}
           >
-            Arts Collection
+            Slide Show
           </h3>
         </Flex.Item>
 
@@ -85,8 +85,18 @@ const ArtGallery = () => {
         </Flex.Item>
 
         <br></br>
+        <br></br>
         <Flex.Item className="animate__animated animate__fadeInDown">
-          <AllImageDisplay imageGallery={currentPosts} />
+          <h3
+            style={{
+              color: "#cda174",
+              fontFamily: "cursive",
+              fontWeight: "bold",
+              fontVariant: "small-caps",
+            }}
+          >
+            Arts Collection
+          </h3>
         </Flex.Item>
 
         <Flex.Item className="animate__animated animate__fadeInDown">
@@ -96,6 +106,10 @@ const ArtGallery = () => {
             setCurrentPage={setCurrentPage}
             currentPage={currentPage}
           />
+        </Flex.Item>
+
+        <Flex.Item className="animate__animated animate__fadeInDown">
+          <AllImageDisplay imageGallery={currentPosts} />
         </Flex.Item>
       </Flex>
 

@@ -23,7 +23,7 @@ import Photo07 from "../assets/photos/resized/photos07.jpg";
 
 const Home = () => {
   const [images, setImages] = useState([]);
-  const [selectedMedium, setSelectedMedium] = useState("Acrylic");
+  const [selectedMedium, setSelectedMedium] = useState("Water");
 
   // Fetch data when the component mounts
   useEffect(() => {

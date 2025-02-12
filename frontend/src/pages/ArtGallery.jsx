@@ -62,7 +62,7 @@ const ArtGallery = () => {
             visibleSlides={1}
             totalSlides={61}
             step={1}
-            naturalSlideWidth={150}
+            naturalSlideWidth={160}
             naturalSlideHeight={120}
             hasMasterSpinner
           >

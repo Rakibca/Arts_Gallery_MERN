@@ -42,27 +42,6 @@ const ArtGallery = () => {
   return (
     <>
       <br></br>
-      <CarouselProvider
-        visibleSlides={1}
-        totalSlides={61}
-        step={3}
-        naturalSlideWidth={400}
-        naturalSlideHeight={500}
-        hasMasterSpinner
-      >
-        <Slider className="slider">
-          {imageGallery.map((image, index) => (
-            <Slide key={index}>
-              <ImageWithZoom src={image.imageURL} alt={image.originalName} />
-            </Slide>
-          ))}
-        </Slider>
-        <ButtonBack className="buttonBack">Back</ButtonBack>
-        <ButtonNext className="buttonNext">Next</ButtonNext>
-        <DotGroup className="dotGroup" />
-      </CarouselProvider>
-
-      <br></br>
       <Flex column alignItemsCenter>
         <Flex.Item className="animate__animated animate__fadeInDown">
           <h3
@@ -76,20 +55,49 @@ const ArtGallery = () => {
             Arts Collection
           </h3>
         </Flex.Item>
+
+        <br></br>
+        <Flex.Item className="animate__animated animate__fadeInDown">
+          <CarouselProvider
+            visibleSlides={1}
+            totalSlides={61}
+            step={1}
+            naturalSlideWidth={150}
+            naturalSlideHeight={120}
+            hasMasterSpinner
+          >
+            <div className="container">
+              <Slider className="slider">
+                {imageGallery.map((image, index) => (
+                  <Slide key={index}>
+                    <ImageWithZoom
+                      src={image.imageURL}
+                      alt={image.originalName}
+                    />
+                  </Slide>
+                ))}
+              </Slider>
+              <ButtonBack className="buttonBack">Back</ButtonBack>
+              <ButtonNext className="buttonNext">Next</ButtonNext>
+            </div>
+            <DotGroup className="dotGroup" />
+          </CarouselProvider>
+        </Flex.Item>
+
+        <br></br>
+        <Flex.Item className="animate__animated animate__fadeInDown">
+          <AllImageDisplay imageGallery={currentPosts} />
+        </Flex.Item>
+
+        <Flex.Item className="animate__animated animate__fadeInDown">
+          <Pagination
+            totalPosts={imageGallery.length}
+            postsPerPage={postsPerPage}
+            setCurrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
+        </Flex.Item>
       </Flex>
-
-      <Flex.Item className="animate__animated animate__fadeInDown">
-        <Pagination
-          totalPosts={imageGallery.length}
-          postsPerPage={postsPerPage}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        />
-      </Flex.Item>
-
-      <Flex.Item className="animate__animated animate__fadeInDown">
-        <AllImageDisplay imageGallery={currentPosts} />
-      </Flex.Item>
 
       <br></br>
       <br></br>

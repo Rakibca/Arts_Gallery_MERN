@@ -102,21 +102,22 @@ const Home = () => {
                   >
                     Hey! Welcome to my Web Page! My name is RAONAK KHAN. I was
                     born in Montreal in November of 2001. I moved to Calgary
-                    with my parents in 2005. I have graduated the from Nelson
+                    with my parents in 2005. I have graduated from the Nelson
                     Mandela High School in 2020. I have taken some courses from
                     Mt. Royal University. Currently I am attending a program at
                     the Springboard Centre. I live in the NE community of
                     Taradale, Calgary, Alberta. My Dad is Rony and Mom is
-                    Nasima. I have a passion for Art and Painting. I love
-                    sketching, drawing, water colouring, oil and acrylic
-                    painting. I received some awards from my local community at
-                    an Arts competition. I try to see people with my eyes and
-                    put them in my painting.
+                    Nasima. I have a passion for Art and Painting. I love pencil
+                    sketch, water colour, oil and acrylic paintings. I received
+                    some awards from my local community at an Arts competition.
+                    I try to see people with my eyes and put them in my
+                    painting.
                     <hr></hr>
                     We are arranging a Solo Art Exhibition at the Genesis Centre
-                    on Sunday, April 27, 2025 from 10am to 4pm MT. You
+                    on Sunday, April 27, 2025 from 10am to 4pm MDT. Your
                     attendance and appreciation will help me to do more creative
-                    Art Works in the future. Please check upcoming events above.
+                    Art Works in the future. Please check for upcoming events
+                    above.
                   </h6>
                 </Col>
               </Row>

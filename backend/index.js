@@ -1,13 +1,15 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
+const port = process.env.PORT || 3000;
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+require("./Models/db");
+const bodyParser = require("body-parser");
+const ImageRoutes = require("./Routes/ImageRoutes");
+
 //const https = require("https");
 //const fs = require("fs");
-const bodyParser = require("body-parser");
-require("dotenv").config();
-const cors = require("cors");
-const ImageRoutes = require("./Routes/ImageRoutes");
-const PORT = process.env.PORT;
-require("./Models/db");
 
 // const options = {
 //   key: fs.readFileSync("/etc/letsencrypt/live/raonak.ca/privkey.pem"),
@@ -21,7 +23,7 @@ app.get("/", (req, res) => {
 app.use(cors());
 // app.use(
 //   cors({
-//     origin: "https://www.raonak.ca", // Allow requests from your frontend domain
+//     origin: "https://raonak.ca", // Allow requests from your frontend domain
 //     methods: ["GET", "POST", "PUT", "DELETE"], // Allow necessary HTTP methods
 //     allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
 //   })
@@ -30,11 +32,12 @@ app.use(cors());
 app.use(bodyParser.json());
 // Middleware to parse URL-encoded bodies //
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 app.use("/api/images", ImageRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on PORT: ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on PORT: ${port}`);
 });
 
 // https.createServer(options, app).listen(443, () => {

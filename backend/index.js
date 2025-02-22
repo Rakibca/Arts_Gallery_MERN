@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.use(cors());
 // app.use(
 //   cors({
-//     origin: "http://www.raonak.ca", // Allow requests from your frontend domain
+//     origin: "https://www.raonak.ca", // Allow requests from your frontend domain
 //     methods: ["GET", "POST", "PUT", "DELETE"], // Allow necessary HTTP methods
 //     allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
 //   })
@@ -37,6 +37,6 @@ app.listen(PORT, () => {
   console.log(`Server is running on PORT: ${PORT}`);
 });
 
-// https.createServer(options, app).listen(3000, () => {
-//   console.log("Server listening on port 3000");
+// https.createServer(options, app).listen(443, () => {
+//   console.log("Server listening on port 443");
 // });

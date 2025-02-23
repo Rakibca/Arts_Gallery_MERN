@@ -16,15 +16,14 @@ const ImageRoutes = require("./Routes/ImageRoutes");
 //   cert: fs.readFileSync("/etc/letsencrypt/live/raonak.ca/fullchain.pem"),
 // };
 
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
+});
+
 app.get("/", (req, res) => {
   res.send("Backend server is running !!");
 });
-
-app.use(
-  cors({
-    origin: "https://www.raonak.ca",
-  })
-);
 
 // app.use(
 //   cors({

@@ -30,8 +30,8 @@ app.get("/", (req, res) => {
 //   })
 // );
 
-// List of allowed origins (both `raonak.ca` and `www.raonak.ca`) //
-const allowedOrigins = ["https://raonak.ca", "https://www.raonak.ca"];
+// List of allowed origins (`raonak.ca`) //
+const allowedOrigins = ["https://raonak.ca"];
 
 app.use(
   cors({

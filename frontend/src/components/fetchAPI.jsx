@@ -3,7 +3,7 @@
 //const API_URL = "http://raonak.ca/api/images";
 //const API_URL = "https://193.43.134.219:3000/api/images";
 //const API_URL = "http://raonak.ca";
-const API_URL = "https://raonak.ca";
+const API_URL = "https://raonak.ca/api/images";
 
 const fetchAPI = async () => {
   try {

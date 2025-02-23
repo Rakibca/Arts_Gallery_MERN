@@ -16,10 +16,7 @@ const ImageRoutes = require("./Routes/ImageRoutes");
 //   cert: fs.readFileSync("/etc/letsencrypt/live/raonak.ca/fullchain.pem"),
 // };
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  next();
-});
+app.use(cors());
 
 // app.use(
 //   cors({

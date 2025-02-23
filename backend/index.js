@@ -21,10 +21,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.send("Backend server is running !!");
-});
-
 // app.use(
 //   cors({
 //     origin: "https://raonak.ca", // Allow requests from your frontend domain
@@ -52,6 +48,10 @@ app.get("/", (req, res) => {
 //   })
 // );
 //////////////////////////////////////////////////////////////////////////////
+
+app.get("/", (req, res) => {
+  res.send("Backend server is running !!");
+});
 
 app.use(bodyParser.json());
 // Middleware to parse URL-encoded bodies //

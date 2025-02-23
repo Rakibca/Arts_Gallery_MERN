@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
 app.use(
   cors({
-    origin: "*", // Allow requests from all origins
+    origin: "https://www.raonak.ca",
   })
 );
 

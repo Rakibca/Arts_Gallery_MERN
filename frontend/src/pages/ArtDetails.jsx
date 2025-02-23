@@ -16,16 +16,15 @@ const ArtDetails = () => {
       //const API_URL = `http://193.43.134.219:3000/api/images/${id}`;
       //const API_URL = `http://raonak.ca/api/images/${id}`;
       //const API_URL = `https://193.43.134.219:3000/api/images/${id}`;
-      //const API_URL = `http://raonak.ca/${id}`;
       const API_URL = `https://raonak.ca/api/images/${id}`;
 
       const response = await fetch(API_URL);
       const { data } = await response.json();
       //console.log(data);
       setImageDetails(data);
-    } catch (err) {
-      console.log("Error: ", err);
-      alert("Internal Server Error, Please try again !!");
+    } catch (error) {
+      console.log("Error: ", error);
+      //alert("Internal Server Error, Please try again !!");
     }
   };
 

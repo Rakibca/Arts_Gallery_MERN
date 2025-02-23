@@ -9,7 +9,6 @@ import Button from "react-bootstrap/Button";
 //const API_URL = "http://193.43.134.219:3000/api/images";
 //const API_URL = "http://raonak.ca/api/images";
 //const API_URL = "https://193.43.134.219:3000/api/images";
-//const API_URL = "http://raonak.ca";
 const API_URL = "https://raonak.ca/api/images";
 
 const Admin = () => {
@@ -24,7 +23,7 @@ const Admin = () => {
       setImageList(data);
     } catch (error) {
       console.log("Error: ", error);
-      alert("Internal Server Error, Please try again !!");
+      //alert("Internal Server Error, Please try again !!");
     }
   };
 

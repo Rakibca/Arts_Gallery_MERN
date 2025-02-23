@@ -20,7 +20,12 @@ app.get("/", (req, res) => {
   res.send("Backend server is running !!");
 });
 
-//app.use(cors());
+app.use(
+  cors({
+    origin: "*", // Allow requests from all origins
+  })
+);
+
 // app.use(
 //   cors({
 //     origin: "https://raonak.ca", // Allow requests from your frontend domain
@@ -30,22 +35,24 @@ app.get("/", (req, res) => {
 //   })
 // );
 
+//////////////////////////////////////////////////////////////////////////////
 // List of allowed origins (`raonak.ca`) //
-const allowedOrigins = ["https://raonak.ca"];
+// const allowedOrigins = ["https://raonak.ca"];
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Check if the origin is in the allowed origins list
-      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-        callback(null, true); // Allow request
-      } else {
-        callback(new Error("Not allowed by CORS")); // Reject request
-      }
-    },
-    credentials: true, // Enable credentials if needed (e.g., cookies or headers)
-  })
-);
+// app.use(
+//   cors({
+//     origin: function (origin, callback) {
+//       // Check if the origin is in the allowed origins list
+//       if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+//         callback(null, true); // Allow request
+//       } else {
+//         callback(new Error("Not allowed by CORS")); // Reject request
+//       }
+//     },
+//     credentials: true, // Enable credentials if needed (e.g., cookies or headers)
+//   })
+// );
+//////////////////////////////////////////////////////////////////////////////
 
 app.use(bodyParser.json());
 // Middleware to parse URL-encoded bodies //

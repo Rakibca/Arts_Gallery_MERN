@@ -20,14 +20,14 @@ app.get("/", (req, res) => {
   res.send("Backend server is running !!");
 });
 
-app.use(cors());
-// app.use(
-//   cors({
-//     origin: "https://raonak.ca", // Allow requests from your frontend domain
-//     methods: ["GET", "POST", "PUT", "DELETE"], // Allow necessary HTTP methods
-//     allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
-//   })
-// );
+//app.use(cors());
+app.use(
+  cors({
+    origin: "https://raonak.ca", // Allow requests from your frontend domain
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allow necessary HTTP methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
+  })
+);
 
 app.use(bodyParser.json());
 // Middleware to parse URL-encoded bodies //

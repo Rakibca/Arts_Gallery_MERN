@@ -16,7 +16,7 @@ const ArtDetails = () => {
       //const API_URL = `http://193.43.134.219:3000/api/images/${id}`;
       //const API_URL = `http://raonak.ca/api/images/${id}`;
       //const API_URL = `https://193.43.134.219:3000/api/images/${id}`;
-      const API_URL = `https://raonak.ca/api/images/${id}`;
+      const API_URL = `https://www.raonak.ca/${id}`;
 
       const response = await fetch(API_URL);
       const { data } = await response.json();

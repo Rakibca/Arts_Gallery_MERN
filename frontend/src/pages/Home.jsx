@@ -13,13 +13,7 @@ import ImageAcrylic from "../components/ImageAcrylic";
 import ImageOil from "../components/ImageOil";
 import ImageDrawing from "../components/ImageDrawing";
 import Accordion from "react-bootstrap/Accordion";
-import Photo01 from "../assets/photos/resized/photos01.jpg";
-import Photo02 from "../assets/photos/resized/photos02.jpg";
-import Photo03 from "../assets/photos/resized/photos03.jpg";
-import Photo04 from "../assets/photos/resized/photos04.jpg";
-import Photo05 from "../assets/photos/resized/photos05.jpg";
-import Photo06 from "../assets/photos/resized/photos06.jpg";
-import Photo07 from "../assets/photos/resized/photos07.jpg";
+import Portrait from "../assets/02portrait.webp";
 
 const Home = () => {
   const [images, setImages] = useState([]);
@@ -142,77 +136,11 @@ const Home = () => {
                 <Col md={2}>
                   <Image
                     className="animate__animated animate__zoomIn"
-                    src={Photo01}
+                    src={Portrait}
                     alt="photos"
                     width="auto"
                     height="auto"
                     roundedCircle
-                  />
-                </Col>
-              </Row>
-              <br></br>
-              <Row className="justify-content-md-center">
-                <Col md={2}>
-                  <Image
-                    className="animate__animated animate__zoomIn"
-                    src={Photo02}
-                    alt="photos"
-                    width="auto"
-                    height="auto"
-                    thumbnail
-                  />
-                </Col>
-                <Col md={2}>
-                  <Image
-                    className="animate__animated animate__zoomIn"
-                    src={Photo03}
-                    alt="photos"
-                    width="auto"
-                    height="auto"
-                    thumbnail
-                  />
-                </Col>
-                <Col md={2}>
-                  <Image
-                    className="animate__animated animate__zoomIn"
-                    src={Photo04}
-                    alt="photos"
-                    width="auto"
-                    height="auto"
-                    thumbnail
-                  />
-                </Col>
-              </Row>
-              <br></br>
-              <Row className="justify-content-md-center">
-                <Col md={2}>
-                  <Image
-                    className="animate__animated animate__zoomIn"
-                    src={Photo05}
-                    alt="photos"
-                    width="auto"
-                    height="auto"
-                    thumbnail
-                  />
-                </Col>
-                <Col md={2}>
-                  <Image
-                    className="animate__animated animate__zoomIn"
-                    src={Photo06}
-                    alt="photos"
-                    width="auto"
-                    height="auto"
-                    thumbnail
-                  />
-                </Col>
-                <Col md={2}>
-                  <Image
-                    className="animate__animated animate__zoomIn"
-                    src={Photo07}
-                    alt="photos"
-                    width="auto"
-                    height="auto"
-                    thumbnail
                   />
                 </Col>
               </Row>

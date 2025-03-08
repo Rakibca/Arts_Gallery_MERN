@@ -1,6 +1,8 @@
 import "animate.css";
 import Alert from "react-bootstrap/Alert";
 import Flex from "@react-css/flex";
+import Image from "react-bootstrap/Image";
+import Brochure from "../assets/01brochure.webp";
 
 const Events = () => {
   return (
@@ -35,6 +37,15 @@ const Events = () => {
           <strong>Date:</strong> April 27, 2025 <br></br>
           <strong>Time:</strong> 10am to 4pm MDT
         </p>
+        <br></br>
+        <Image
+          className="animate__animated animate__zoomIn"
+          src={Brochure}
+          alt="photos"
+          width="768"
+          height="432"
+          thumbnail
+        />
       </Alert>
 
       <br></br>

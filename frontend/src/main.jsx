@@ -7,7 +7,7 @@ import "react-toastify/ReactToastify.css";
 if (window.location.host === "www.raonak.ca") {
   setTimeout(() => {
     window.location.href = "https://raonak.ca" + window.location.pathname;
-  }, 2000); // 2000ms = 2s
+  }, 500); // Wait for 0.5 seconds
 }
 
 createRoot(document.getElementById("root")).render(

@@ -13,7 +13,7 @@ import ImageAcrylic from "../components/ImageAcrylic";
 import ImageOil from "../components/ImageOil";
 import ImageDrawing from "../components/ImageDrawing";
 import Accordion from "react-bootstrap/Accordion";
-import Portrait from "../assets/02portrait.webp";
+import Portrait from "../assets/02portrait.jpg";
 
 const Home = () => {
   const [images, setImages] = useState([]);

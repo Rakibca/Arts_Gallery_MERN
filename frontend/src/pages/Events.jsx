@@ -2,7 +2,7 @@ import "animate.css";
 import Alert from "react-bootstrap/Alert";
 import Flex from "@react-css/flex";
 import Image from "react-bootstrap/Image";
-import Brochure from "../assets/01brochure.webp";
+import Brochure from "../assets/01brochure.jpg";
 
 const Events = () => {
   return (

@@ -17,10 +17,10 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading for 3.5 seconds
+    // Simulate loading for 2.5 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 3500);
+    }, 2500);
   }, []);
 
   return (

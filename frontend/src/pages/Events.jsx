@@ -34,7 +34,7 @@ const Events = () => {
           <br></br>
           <strong>Address:</strong> 7555 Falconridge Blvd NE #10, Calgary, AB
           T3J 0C9<br></br>
-          <strong>Date:</strong> April 27, 2025 <br></br>
+          <strong>Date:</strong> Sunday, April 27, 2025 <br></br>
           <strong>Time:</strong> 10am to 4pm MDT
         </p>
         <br></br>

@@ -5,15 +5,45 @@ import Flex from "@react-css/flex";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
-import fetchAPI from "../components/fetchAPI.jsx";
+import Accordion from "react-bootstrap/Accordion";
+//import Box from "@mui/material/Box";
+//import ImageList from "@mui/material/ImageList";
+//import ImageListItem from "@mui/material/ImageListItem";
+import fetchAPI from "../components/fetchAPI";
 //import Loading from "../components/Loading";
 //import Loading2 from "../components/Loading2";
 import ImageWater from "../components/ImageWater";
 import ImageAcrylic from "../components/ImageAcrylic";
 import ImageOil from "../components/ImageOil";
 import ImageDrawing from "../components/ImageDrawing";
-import Accordion from "react-bootstrap/Accordion";
 import Portrait from "../assets/02portrait.jpg";
+import Photo03 from "../assets/03.jpg";
+import Photo04 from "../assets/04.jpg";
+import Photo05 from "../assets/05.jpg";
+import Photo06 from "../assets/06.jpg";
+import Photo07 from "../assets/07.jpg";
+import Photo08 from "../assets/08.jpg";
+import Photo09 from "../assets/09.jpg";
+import Photo10 from "../assets/10.jpg";
+import Photo11 from "../assets/11.jpg";
+import Photo12 from "../assets/12.jpg";
+import Photo13 from "../assets/13.jpg";
+import Photo14 from "../assets/14.jpg";
+import Photo15 from "../assets/15.jpg";
+import Photo16 from "../assets/16.jpg";
+import Photo17 from "../assets/17.jpg";
+import Photo18 from "../assets/18.jpg";
+import Photo19 from "../assets/19.jpg";
+import Photo20 from "../assets/20.jpg";
+import Photo21 from "../assets/21.jpg";
+import Photo22 from "../assets/22.jpg";
+import Photo23 from "../assets/23.jpg";
+import Photo24 from "../assets/24.jpg";
+import Photo25 from "../assets/25.jpg";
+import Photo26 from "../assets/26.jpg";
+import Photo27 from "../assets/27.jpg";
+import Photo28 from "../assets/28.jpg";
+import Photo29 from "../assets/29.jpg";
 
 const Home = () => {
   const [images, setImages] = useState([]);
@@ -141,6 +171,291 @@ const Home = () => {
                     width="auto"
                     height="auto"
                     roundedCircle
+                  />
+                </Col>
+              </Row>
+              <br></br>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo03}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo04}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo05}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo06}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo07}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo08}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+              </Row>
+              <br></br>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo09}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo10}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo11}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo12}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo13}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo14}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+              </Row>
+              <br></br>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo15}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo16}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo17}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo18}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo19}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo20}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+              </Row>
+              <br></br>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo21}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo22}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo23}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo24}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo25}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo26}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+              </Row>
+              <br></br>
+              <Row className="justify-content-md-center">
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo27}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo28}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Photo29}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
                   />
                 </Col>
               </Row>

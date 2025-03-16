@@ -16,8 +16,8 @@ import ImageWater from "../components/ImageWater";
 import ImageAcrylic from "../components/ImageAcrylic";
 import ImageOil from "../components/ImageOil";
 import ImageDrawing from "../components/ImageDrawing";
-import Portrait from "../assets/02portrait.jpg";
-import Photo03 from "../assets/03.jpg";
+import Portrait_1 from "../assets/02portrait.jpg";
+import Portrait_2 from "../assets/03portrait.jpg";
 import Photo04 from "../assets/04.jpg";
 import Photo05 from "../assets/05.jpg";
 import Photo06 from "../assets/06.jpg";
@@ -166,7 +166,17 @@ const Home = () => {
                 <Col md={2}>
                   <Image
                     className="animate__animated animate__zoomIn"
-                    src={Portrait}
+                    src={Portrait_1}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    roundedCircle
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Portrait_2}
                     alt="photos"
                     width="auto"
                     height="auto"
@@ -176,16 +186,6 @@ const Home = () => {
               </Row>
               <br></br>
               <Row className="justify-content-md-center">
-                <Col md={2}>
-                  <Image
-                    className="animate__animated animate__zoomIn"
-                    src={Photo03}
-                    alt="photos"
-                    width="auto"
-                    height="auto"
-                    thumbnail
-                  />
-                </Col>
                 <Col md={2}>
                   <Image
                     className="animate__animated animate__zoomIn"

@@ -29,7 +29,7 @@ const Events = () => {
         </Alert.Heading>
         <hr />
         <p style={{ marginBottom: "0px", fontFamily: "cursive" }}>
-          <strong>Inaugurated by:</strong> Honourable MLA Irfan Sabir<br></br>
+          <strong>Inaugurated by:</strong> The Leader of the Alberta NDP Naheed Nenshi and Honourable MLA Irfan Sabir<br></br>
           <strong>Venue:</strong> The Genesis Centre, Multicultural Room A
           <br></br>
           <strong>Address:</strong> 7555 Falconridge Blvd NE #10, Calgary, AB

@@ -137,11 +137,15 @@ const Home = () => {
                     I try to see people with my eyes and put them in my
                     painting.
                     <hr></hr>
-                    We are arranging a Solo Art Exhibition at the Genesis Centre
-                    on Sunday, April 27, 2025 from 10am to 4pm MDT. Your
-                    attendance and appreciation will help me to do more creative
-                    Art Works in the future. Please check for upcoming events
-                    above.
+                    Please join "Raonak Solo Art Exhibition" on April 27th,
+                    Sunday at the Genesis Centre, Calgary, AB, to be unleashed
+                    in the world of imagination and how powerful Art could be as
+                    a media of inspiration. This event will be radiant and
+                    Inaugurated by the Honorable renowned NDP Leader Naheed
+                    Nenshi and Honorable MLA Irfan Sabir will be there to
+                    inspire. Your attendance and appreciation will help me to do
+                    more creative Art Works in the future. Please check upcoming
+                    events page for more details.
                   </h6>
                 </Col>
               </Row>

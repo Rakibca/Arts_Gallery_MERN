@@ -44,6 +44,8 @@ import Photo26 from "../assets/26.jpg";
 import Photo27 from "../assets/27.jpg";
 import Photo28 from "../assets/28.jpg";
 import Photo29 from "../assets/29.jpg";
+import Certificate from "../assets/30certificate.jpg";
+import Award from "../assets/31award.jpg";
 
 const Home = () => {
   const [images, setImages] = useState([]);
@@ -476,22 +478,30 @@ const Home = () => {
                   fontVariant: "small-caps",
                 }}
               >
-                Prizes, Awards & Certificates
+                Prizes, Certificates & Awards
               </h5>
             </Accordion.Header>
             <Accordion.Body>
               <Row className="justify-content-md-center">
-                <Col md={11}>
-                  <h6
-                    style={{
-                      color: "#640f28",
-                      textAlign: "center",
-                      fontFamily: "cursive",
-                    }}
-                    // className="animate__animated animate__bounceInLeft"
-                  >
-                    COMING SOON !
-                  </h6>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Certificate}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
+                </Col>
+                <Col md={2}>
+                  <Image
+                    className="animate__animated animate__zoomIn"
+                    src={Award}
+                    alt="photos"
+                    width="auto"
+                    height="auto"
+                    thumbnail
+                  />
                 </Col>
               </Row>
             </Accordion.Body>

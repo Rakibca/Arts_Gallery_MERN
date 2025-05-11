@@ -60,7 +60,7 @@ const ArtGallery = () => {
         <Flex.Item className="animate__animated animate__fadeInDown">
           <CarouselProvider
             visibleSlides={1}
-            totalSlides={61}
+            totalSlides={64}
             step={1}
             naturalSlideWidth={160}
             naturalSlideHeight={120}

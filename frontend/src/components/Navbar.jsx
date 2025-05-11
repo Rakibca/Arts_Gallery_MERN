@@ -37,7 +37,7 @@ const Navbar = () => {
             to="/events"
             className="animate__animated animate__fadeInDown"
           >
-            <Button text="UPCOMING EVENTS" effectType="effect1" />
+            <Button text="EVENTS" effectType="effect1" />
           </NavLink>
         </li>
         <li>

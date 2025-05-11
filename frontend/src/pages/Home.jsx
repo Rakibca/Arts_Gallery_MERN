@@ -561,7 +561,7 @@ const Home = () => {
             style={buttonStyle}
             onClick={() => setSelectedMedium("Drawing")}
           >
-            Pencil Sketch
+            Drawing & Sketch
           </button>
         </Flex.Item>
       </Flex>

@@ -32,7 +32,7 @@ const ArtDetails = () => {
     fetchImageDetails();
   }, [id]);
 
-  const priceInt = imageDetails?.originalName.split(" ").pop().slice(0, -5);
+  const priceInt = imageDetails?.originalName.split(" ").pop().slice(0, -4);
   const price = priceInt + ".00";
   console.log("Art price is: " + price + " CAD");
 
@@ -68,7 +68,7 @@ const ArtDetails = () => {
           style={{ fontSize: "20px", color: "#cda174", fontFamily: "cursive" }}
         >
           {"Price: $" +
-            imageDetails?.originalName.split(" ").pop().slice(0, -5) +
+            imageDetails?.originalName.split(" ").pop().slice(0, -4) +
             " CAD"}
         </h4>
       </Flex.Item>

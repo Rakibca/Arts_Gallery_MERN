@@ -1,9 +1,12 @@
 body {
   /* margin: 0px 400px; */
   /* padding: 0px 150px; */
-  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   background: linear-gradient(#640f28, #2c2c2c);
   background-attachment: fixed;
+  -webkit-appearance: none; /* Chrome, Safari */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
 }
 
 /* Navbar ***********************************************************/
@@ -128,8 +131,8 @@ nav .menu span {
 
 .image-detail img {
   display: block;
-  width: 40%;
-  height: 40%;
+  width: 75%;
+  height: 75%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;

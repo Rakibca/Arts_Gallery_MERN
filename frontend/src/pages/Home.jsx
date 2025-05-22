@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "animate.css";
 import "./Home.css";
 import Flex from "@react-css/flex";
@@ -50,6 +51,7 @@ import Award from "../assets/31award.jpg";
 const Home = () => {
   const [images, setImages] = useState([]);
   const [selectedMedium, setSelectedMedium] = useState("Water");
+  const navigate = useNavigate(); // Hook for programmatic navigation
 
   // Fetch data when the component mounts
   useEffect(() => {
@@ -94,6 +96,14 @@ const Home = () => {
           </div>
         );
     }
+  };
+
+  const handleClickGallery = () => {
+    navigate("/gallery");
+  };
+
+  const handleClickEvents = () => {
+    navigate("/events");
   };
 
   return (
@@ -532,6 +542,15 @@ const Home = () => {
           <button
             className="animate__animated animate__fadeInDown"
             style={buttonStyle}
+            onClick={handleClickGallery}
+          >
+            GALLERY
+          </button>
+        </Flex.Item>
+        <Flex.Item className="zoom-effect">
+          <button
+            className="animate__animated animate__fadeInDown"
+            style={buttonStyle}
             onClick={() => setSelectedMedium("Water")}
           >
             Water Colour
@@ -562,6 +581,15 @@ const Home = () => {
             onClick={() => setSelectedMedium("Drawing")}
           >
             Drawing & Sketch
+          </button>
+        </Flex.Item>
+        <Flex.Item className="zoom-effect">
+          <button
+            className="animate__animated animate__fadeInDown"
+            style={buttonStyle}
+            onClick={handleClickEvents}
+          >
+            EVENTS
           </button>
         </Flex.Item>
       </Flex>

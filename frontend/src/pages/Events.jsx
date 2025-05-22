@@ -208,7 +208,7 @@ const Events = () => {
       <br></br>
       <br></br>
       <ReactPlayer
-        playing
+        controls
         url={[{ src: "./Exh_Videos/Channel_i.mp4", type: "video/mp4" }]}
         width="60%"
         height="60%"
@@ -216,7 +216,7 @@ const Events = () => {
       <br></br>
       <br></br>
       <ReactPlayer
-        playing
+        controls
         url={[{ src: "./Exh_Videos/Asif.mp4", type: "video/mp4" }]}
         width="60%"
         height="60%"
@@ -224,7 +224,7 @@ const Events = () => {
       <br></br>
       <br></br>
       <ReactPlayer
-        playing
+        controls
         url={[{ src: "./Exh_Videos/DrNick.mp4", type: "video/mp4" }]}
         width="60%"
         height="60%"
@@ -232,7 +232,7 @@ const Events = () => {
       <br></br>
       <br></br>
       <ReactPlayer
-        playing
+        controls
         url={[{ src: "./Exh_Videos/Eakbal.mp4", type: "video/mp4" }]}
         width="60%"
         height="60%"

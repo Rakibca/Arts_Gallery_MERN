@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import Button from "./Button";
-import "animate.css";
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import Button from './Button';
+import FacebookIconLink from './FacebookIconLink';
+import 'animate.css';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-      <ul className={menuOpen ? "open" : ""}>
+      <ul className={menuOpen ? 'open' : ''}>
         <li>
           <NavLink to="/" className="animate__animated animate__fadeInDown">
             <Button text="HOME" effectType="effect1" />
@@ -30,6 +31,9 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
+          <FacebookIconLink />
+        </li>
+        <li>
           <NavLink
             to="/events"
             className="animate__animated animate__fadeInDown"
@@ -37,6 +41,7 @@ const Navbar = () => {
             <Button text="EVENTS" effectType="effect1" />
           </NavLink>
         </li>
+
         <li>
           <NavLink
             to="/contact"
